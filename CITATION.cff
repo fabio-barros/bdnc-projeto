@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this dataset or pipeline, please cite it as below."
+title: "VacinaBR-PNI: Um Dataset Curado e Enriquecido para Analises Epidemiologicas das Doses Aplicadas pelo Programa Nacional de Imunizacoes"
+type: dataset
+year: 2026
+license: CC-BY-4.0
+repository-code: "https://github.com/SEU-USUARIO/bdnc-projeto"
+abstract: "Dataset curado, padronizado, validado e documentado de doses aplicadas pelo Programa Nacional de Imunizacoes, derivado da API de Dados Abertos do Ministerio da Saude."
+keywords:
+  - vacinacao
+  - PNI
+  - saude publica
+  - data paper
+  - epidemiologia
+authors:
+  - name: "Fabio"

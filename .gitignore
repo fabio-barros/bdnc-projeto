@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+data/raw/
+data/processed/
+data/analytics/
+docs/schema.json
+docs/data_dictionary.csv
+docs/validation_report.csv

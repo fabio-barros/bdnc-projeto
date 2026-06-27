@@ -1,0 +1,18 @@
+metric,value,description
+original_records,10653978,original records
+processed_records,10653978,processed records
+removed_duplicate_records,0,removed duplicate records
+total_missing_values,123555041,total missing values
+invalid_age_records,0,invalid age records
+invalid_date_records,0,invalid date records
+complete_records,4724740,complete records
+incomplete_records,5929238,incomplete records
+valid_document_records,10653978,valid document records
+invalid_document_records,0,invalid document records
+missing_data_vacina,0,missing data vacina
+missing_sexo_paciente,0,missing sexo paciente
+missing_numero_idade_paciente,0,missing numero idade paciente
+missing_uf_paciente,178292,missing uf paciente
+missing_codigo_municipio_paciente,176893,missing codigo municipio paciente
+missing_sg_vacina,0,missing sg vacina
+missing_descricao_vacina_fabricante,234637,missing descricao vacina fabricante

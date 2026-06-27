@@ -1,0 +1,28 @@
+field,type,description
+data_vacina,date,Data de aplicacao da vacina.
+ano_vacinacao,integer,Ano extraido da data de vacinacao.
+mes_vacinacao,integer,Mes extraido da data de vacinacao.
+trimestre_vacinacao,string,Trimestre da vacinacao.
+semana_epidemiologica,integer,Semana epidemiologica estimada a partir da data de vacinacao.
+sexo_paciente,string,Sexo informado do paciente.
+numero_idade_paciente,number,Idade informada do paciente.
+faixa_etaria,string,Faixa etaria derivada da idade.
+idade_valida,boolean,Indica se a idade esta no intervalo esperado de 0 a 130 anos.
+uf_paciente,string,Unidade federativa do paciente.
+regiao_paciente,string,Regiao geografica derivada da UF do paciente.
+codigo_municipio_paciente,string,Codigo do municipio do paciente.
+uf_estabelecimento,string,Unidade federativa do estabelecimento.
+regiao_estabelecimento,string,Regiao geografica derivada da UF do estabelecimento.
+codigo_municipio_estabelecimento,string,Codigo do municipio do estabelecimento.
+municipio_paciente_igual_estabelecimento,boolean,Indica se paciente e estabelecimento pertencem ao mesmo municipio.
+codigo_vacina,string,Codigo da vacina.
+sg_vacina,string,Sigla da vacina ou imunobiologico.
+descricao_dose_vacina,string,Descricao da dose aplicada.
+descricao_vacina_fabricante,string,Fabricante informado da vacina.
+descricao_estrategia_vacinacao,string,Estrategia de vacinacao informada.
+descricao_sistema_origem,string,Sistema de origem do registro.
+st_documento,string,Status documental do registro.
+registro_deletado_rnds,boolean,Indica se o registro possui data de delecao na RNDS.
+documento_final,boolean,Indica se o status do documento e final.
+registro_valido_documento,boolean,Indica documento final e nao deletado.
+registro_completo,boolean,Indica preenchimento dos campos essenciais.

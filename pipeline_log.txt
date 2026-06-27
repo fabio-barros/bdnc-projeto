@@ -1,0 +1,8 @@
+[extract] loaded raw pages from disk year=2025 records=2,000
+[transform] total raw records=2,000 columns=56
+[transform] processed records=1,904 columns=67
+[load] saved data\processed\year=2025\month=01\vacinabr_pni_clean.parquet rows=1,904
+[done] Pipeline finalizada com sucesso.
+[done] Processed: data\processed
+[done] Analytics: data\analytics
+[done] Docs: docs

@@ -1,0 +1,16 @@
+{
+  "database": "tmp\\january_real_test\\data\\vacinabr_pni.duckdb",
+  "source_parquet_pattern": "tmp\\january_real_test\\data\\processed\\year=*\\month=*\\*.parquet",
+  "view": "vacinacao_curada",
+  "tables": [
+    "age_group_summary",
+    "dataset_metadata",
+    "manufacturer_summary",
+    "monthly_vaccination_summary",
+    "region_vaccination_summary",
+    "sex_summary",
+    "state_vaccination_summary",
+    "vaccine_type_summary",
+    "vacinacao_curada"
+  ]
+}

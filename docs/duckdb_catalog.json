@@ -1,0 +1,52 @@
+{
+  "database": "data\\vacinabr_pni.duckdb",
+  "source_parquet_pattern": "data\\processed\\year=*\\month=*\\*.parquet",
+  "tables": [
+    {
+      "name": "age_group_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "dataset_metadata",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "manufacturer_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "monthly_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "region_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "sex_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "state_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "vaccine_type_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "vacinacao_curada",
+      "type": "VIEW"
+    }
+  ],
+  "view": "vacinacao_curada",
+  "summary_queries": {
+    "monthly_vaccination_summary": "\n        SELECT\n            ano_vacinacao,\n            mes_vacinacao,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY ano_vacinacao, mes_vacinacao\n        ORDER BY ano_vacinacao, mes_vacinacao\n    ",
+    "state_vaccination_summary": "\n        SELECT\n            uf_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY uf_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "region_vaccination_summary": "\n        SELECT\n            regiao_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY regiao_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "vaccine_type_summary": "\n        SELECT\n            sg_vacina,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY sg_vacina\n        ORDER BY doses_aplicadas DESC\n    ",
+    "manufacturer_summary": "\n        SELECT\n            descricao_vacina_fabricante,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY descricao_vacina_fabricante\n        ORDER BY doses_aplicadas DESC\n    ",
+    "age_group_summary": "\n        SELECT\n            faixa_etaria,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY faixa_etaria\n        ORDER BY doses_aplicadas DESC\n    ",
+    "sex_summary": "\n        SELECT\n            sexo_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY sexo_paciente\n        ORDER BY doses_aplicadas DESC\n    "
+  }
+}

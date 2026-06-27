@@ -1,0 +1,5 @@
+{
+  "database": "tmp\\colab_smoke\\data\\vacinabr_pni.duckdb",
+  "source_parquet_pattern": "tmp\\colab_smoke\\data\\processed\\year=*\\month=*\\*.parquet",
+  "view": "vacinacao_curada"
+}

@@ -1,0 +1,89 @@
+{
+  "dataset": "VacinaBR-PNI",
+  "source_page": "https://dadosabertos.saude.gov.br/dataset/doses-aplicadas-pelo-programa-de-nacional-de-imunizacoes-pni-2025",
+  "resources": [
+    {
+      "year": 2025,
+      "month": 1,
+      "month_name": "janeiro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_jan_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 2,
+      "month_name": "fevereiro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_fev_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 3,
+      "month_name": "marco",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_mar_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 4,
+      "month_name": "abril",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_abr_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 5,
+      "month_name": "maio",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_mai_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 6,
+      "month_name": "junho",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_jun_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 7,
+      "month_name": "julho",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_jul_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 8,
+      "month_name": "agosto",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_ago_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 9,
+      "month_name": "setembro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_set_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 10,
+      "month_name": "outubro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_out_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 11,
+      "month_name": "novembro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_nov_2025_csv.zip"
+    },
+    {
+      "year": 2025,
+      "month": 12,
+      "month_name": "dezembro",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/PNI/csv/vacinacao_dez_2025_csv.zip"
+    }
+  ],
+  "raw_storage": "data\\raw\\zip",
+  "processed_storage": "tmp\\january_real_test\\data\\processed",
+  "database_layer": {
+    "database": "DuckDB",
+    "database_path": "tmp\\january_real_test\\data\\vacinabr_pni.duckdb",
+    "purpose": "Consultar os Parquets curados e materializar agregados analiticos por SQL."
+  },
+  "sensitive_fields_removed_from_processed": [
+    "codigo_paciente",
+    "numero_cep_paciente"
+  ]
+}

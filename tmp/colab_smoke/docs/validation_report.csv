@@ -1,0 +1,3 @@
+metric,value,description
+original_records,2,Registros brutos no teste local.
+processed_records,2,Registros processados no teste local.
