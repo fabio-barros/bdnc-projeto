@@ -1,98 +1,148 @@
-ano_vacinacao,mes_vacinacao,sg_vacina,doses_aplicadas
-2025,1,BCG,224164
-2025,1,COVID-19 ASTRAZENECA - CHADOX1-S,13
-2025,1,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,63
-2025,1,COVID-19 BHARAT - COVAXIN,4
-2025,1,COVID-19 GAMALEYA - SPUTNIK V,2
-2025,1,COVID-19 JANSSEN - AD26.COV2.S,5
-2025,1,COVID-19 MODERNA - SPIKEVAX,30521
-2025,1,COVID-19 MODERNA - SPIKEVAX BIVALENTE,25
-2025,1,COVID-19 PFIZER - COMIRNATY,575
-2025,1,COVID-19 PFIZER - COMIRNATY BIVALENTE,137
-2025,1,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,1115
-2025,1,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,117405
-2025,1,COVID-19 SERUM/ZALIKA,388710
-2025,1,COVID-19 SINOVAC - CORONAVAC,7
-2025,1,COVID-19 SINOVAC/BUTANTAN - CORONAVAC,20
-2025,1,DENGUE,9028
-2025,1,DILMENC,3
-2025,1,DILSRC,21
-2025,1,DILVAR,5
-2025,1,DILVR,2
-2025,1,DNG,473068
-2025,1,DT,951723
-2025,1,DTP,460203
-2025,1,DTPA,257539
-2025,1,DTPA/VIP,1148
-2025,1,FLU ID,61
-2025,1,FTA,141
-2025,1,FTP,555
-2025,1,GRIPE SAZONAL,213
-2025,1,H1N1,1600
-2025,1,HA,2869
-2025,1,HAEHB,1847
-2025,1,HAEHBPED,224
-2025,1,HEPAAD,8732
-2025,1,HEPAINF,253392
-2025,1,HEPB,904020
-2025,1,HEXA,40523
-2025,1,HIB,16271
-2025,1,HPV BI,40
-2025,1,HPV2,79
-2025,1,HPV4,328244
-2025,1,HPV9,25461
-2025,1,IGHHB,453
-2025,1,IGHR,5671
-2025,1,IGHT,564
-2025,1,IGHV,34
-2025,1,INF3,96222
-2025,1,INF4,3991
-2025,1,INF4-ALTA DOSAGEM,32
-2025,1,MEN BC,197
-2025,1,MENACWY,535960
-2025,1,MENB,56116
-2025,1,MENC,478002
-2025,1,MENINGO AC,1273
-2025,1,PENTA,683499
-2025,1,PENTA ACELULAR,12584
-2025,1,PNCC7V,1
-2025,1,QUADRUPLA VIRAL,243
-2025,1,ROTA,419447
-2025,1,ROTA5,28089
-2025,1,SABOCR,5164
-2025,1,SABOLA,80657
-2025,1,SABOT,3
-2025,1,SABOTR,888
-2025,1,SACROT,103
-2025,1,SAD,1
-2025,1,SAELAP,12
-2025,1,SAESCOR,364
-2025,1,SALONO,6
-2025,1,SALOXO,2
-2025,1,SAR,1583
-2025,1,SARAMPO,3
-2025,1,SARC,206
-2025,1,SAT,1441
-2025,1,SCR,462615
-2025,1,SCRV,317844
-2025,1,SR,41
-2025,1,TETRA,183
-2025,1,TETRA ACELULAR,6538
-2025,1,TT,319
-2025,1,VAR,135331
-2025,1,VERO,22915
-2025,1,VFA,803662
-2025,1,VFA-F,73
-2025,1,VHZ,4765
-2025,1,VIP,1162349
-2025,1,VOP,1538
-2025,1,VPC10,633482
-2025,1,VPC13,20832
-2025,1,VPC15,32019
-2025,1,VPC20,45576
-2025,1,VPP23,44026
-2025,1,VR,142
-2025,1,VVBN,55
-2025,1,VVSR-REC,9734
-2025,1,VVSR-RECADJ,5116
-2025,1,VZR,32234
+ano_vacinacao,mes_vacinacao,sg_vacina,descricao_vacina,doses_aplicadas
+2025,1,VIP,Vacina polio injetável,1162349
+2025,1,DT,Vacina difteria e tétano adulto,951080
+2025,1,HEPB,Vacina hepatite B,904020
+2025,1,VFA,Vacina febre amarela,803475
+2025,1,PENTA,Vacina penta (DTP/HepB/Hib),683499
+2025,1,VPC10,Vacina pneumo 10,633482
+2025,1,MENACWY,Vacina meningo ACWY,535960
+2025,1,MENC,Vacina meningo C,478002
+2025,1,DNG,Vacina dengue (atenuada),473068
+2025,1,SCR,"Vacina sarampo, caxumba, rubéola",462615
+2025,1,DTP,Vacina DTP,460203
+2025,1,ROTA,Vacina rotavírus,419447
+2025,1,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",374784
+2025,1,HPV4,Vacina HPV quadrivalente,328244
+2025,1,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",317844
+2025,1,DTPA,Vacina dTpa adulto,254386
+2025,1,HEPAINF,Vacina hepatite A infantil,253392
+2025,1,BCG,Vacina BCG,224164
+2025,1,VAR,Vacina varicela,135331
+2025,1,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",117405
+2025,1,INF3,Vacina influenza trivalente,96222
+2025,1,SABOLA,Vacina raiva em cultivo celular vero,80467
+2025,1,MENB,Vacina meningo B,56116
+2025,1,VPC20,Vacina Pneumo 20,45576
+2025,1,VPP23,Vacina pneumo 23,44026
+2025,1,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),40523
+2025,1,VZR,"Vacina Herpes-Zoster, recombinante",32234
+2025,1,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",32019
+2025,1,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",30521
+2025,1,ROTA5,Vacina rotavírus pentavalente,28089
+2025,1,HPV9,Vacina HPV nonavalente,25461
+2025,1,VERO,Vacina raiva em cultivo celular vero,22915
+2025,1,VPC13,Vacina pneumo 13,20832
+2025,1,HIB,Vacina Hib,16271
+2025,1,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",13926
+2025,1,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),12584
+2025,1,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),9734
+2025,1,DENGUE,Vacina dengue,9028
+2025,1,HEPAAD,Vacina hepatite A adulto,8732
+2025,1,TETRA ACELULAR,Vacina DTPa/VIP,6538
+2025,1,IGHR,Imunoglobulina humana antirrábica,5671
+2025,1,SABOCR,Vacina raiva em cultivo celular vero,5051
+2025,1,VHZ,Vacina herpes-zóster,4765
+2025,1,VVSR-RECADJ,"VsR (re combinante, adjuvada)",4594
+2025,1,INF4,Vacina influenza tetravalente,3991
+2025,1,DTPA,Vacina DTPa infantil,3153
+2025,1,HA,Vacina hepatite A,2869
+2025,1,HAEHB,Vacina hepatite AeB (uso adulto),1847
+2025,1,H1N1,Vacina Influenza H1N1,1600
+2025,1,SAR,Soro antirrábico,1583
+2025,1,VOP,Vacina polio oral,1538
+2025,1,SAT,Soro antitetânico,1441
+2025,1,MENINGO AC,Vacina raiva em cultivo celular vero,1265
+2025,1,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,1148
+2025,1,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",1115
+2025,1,SABOTR,Soro antibotrópico (pentavalente),888
+2025,1,DT,Vacina difteria e tétano infantil,643
+2025,1,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",575
+2025,1,IGHT,Imunoglobulina humana antitétano,564
+2025,1,FTP,Vacina febre tifóide,555
+2025,1,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",522
+2025,1,IGHHB,Imunoglobulina humana anti-hepatite B,453
+2025,1,SAESCOR,Soro antiescorpiônico,364
+2025,1,TT,Vacina toxóide tetânico,319
+2025,1,QUADRUPLA VIRAL,Vacina quádrupla viral,243
+2025,1,HAEHBPED,Hepatite AeB (pediátrica),224
+2025,1,GRIPE SAZONAL,Vacina gripe,213
+2025,1,SARC,Soro antiaracnídico,206
+2025,1,MEN BC,Vacina meningocócica B/C,197
+2025,1,TETRA,Vacina DTP/Hib,183
+2025,1,VR,Vacina raiva embrião de galinha,142
+2025,1,FTA,Vacina febre tifóide (atenuada),141
+2025,1,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",137
+2025,1,SABOLA,Vacina raiva embrião de galinha,137
+2025,1,SACROT,Soro anticrotálico,103
+2025,1,VFA,Vacina influenza trivalente,99
+2025,1,HPV2,Vacina HPV bivalente,79
+2025,1,VFA-F,Vacina febre amarela fracionada,73
+2025,1,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",63
+2025,1,FLU ID,Vacina influenza ID,61
+2025,1,VVBN,Vacina Varíola Bavarian Nordic,55
+2025,1,SR,"Vacina sarampo, rubéola",41
+2025,1,SABOLA,Soro antibotrópico (pentavalente) e antilaquético,41
+2025,1,HPV BI,Vacina HPV bivalente,40
+2025,1,SABOCR,Soro antibotrópico (pentavalente) e anticrotálico,35
+2025,1,IGHV,Imunoglobulina humana antivaricela,34
+2025,1,INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,32
+2025,1,COVID-19 MODERNA - SPIKEVAX BIVALENTE,"Vacina COVID-19-RNAm, Moderna (Spikevax) bivalente",25
+2025,1,SABOCR,Vacina raiva embrião de galinha,25
+2025,1,DILSRC,"Diluente para vacina sarampo, caxumba, rubéola",21
+2025,1,COVID-19 SINOVAC/BUTANTAN - CORONAVAC,"Vacina COVID-19 SINOVAC/BUTANTAN - CORONAVAC, inativada",20
+2025,1,SABOCR,"Vacina Herpes-Zoster, recombinante",19
+2025,1,VFA,Vacina difteria e tétano adulto,16
+2025,1,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",13
+2025,1,SAELAP,Soro antielapídico,12
+2025,1,VFA,Vacina meningo ACWY,12
+2025,1,VFA,Vacina HPV quadrivalente,10
+2025,1,VFA,"Vacina sarampo, caxumba, rubéola e varicela",9
+2025,1,VFA,Vacina dengue (atenuada),9
+2025,1,VFA,Vacina raiva em cultivo celular vero,8
+2025,1,COVID-19 SINOVAC - CORONAVAC,Vacina COVID-19 SINOVAC - CORONAVAC inativada,7
+2025,1,SABOCR,Vacina dTpa adulto,6
+2025,1,SABOCR,"VsR (re combinante, adjuvada)",6
+2025,1,SABOCR,Vacina febre amarela,6
+2025,1,SALONO,Soro antilonômico,6
+2025,1,COVID-19 JANSSEN - AD26.COV2.S,"Vacina COVID-19 JANSSEN - Ad26.COV2.S, recombinante",5
+2025,1,VFA,Vacina DTP,5
+2025,1,DILVAR,Diluente para vacina varicela,5
+2025,1,VFA,Vacina polio injetável,4
+2025,1,COVID-19 BHARAT - COVAXIN,Vacina COVID-19 BHARAT - COVAXIN inativada,4
+2025,1,SABOLA,Vacina HPV nonavalente,4
+2025,1,SABOCR,Vacina dengue (atenuada),4
+2025,1,MENINGO AC,Vacina meningocócica AC,4
+2025,1,SARAMPO,Vacina sarampo,3
+2025,1,SABOCR,Vacina pneumo 23,3
+2025,1,VFA,Vacina hepatite B,3
+2025,1,SABOT,Soro antibotulínico AB (bivalente),3
+2025,1,SABOLA,Vacina dengue (atenuada),3
+2025,1,VFA,Vacina dTpa adulto,3
+2025,1,DILMENC,Diluente para vacina meningo C,3
+2025,1,SALOXO,Soro antiloxoscélico (trivalente),2
+2025,1,SABOLA,"Vacina Herpes-Zoster, recombinante",2
+2025,1,COVID-19 GAMALEYA - SPUTNIK V,Vacina COVID-19 GAMALEYA - SPUTNIK V recombinante,2
+2025,1,SABOCR,Vacina HPV quadrivalente,2
+2025,1,VFA,Vacina varicela,2
+2025,1,DILVR,Diluente para vacina raiva cultivo embrião de galinha,2
+2025,1,SABOCR,Vacina Tetra Acelular dTpa/VIP,2
+2025,1,VFA,Vacina penta (DTP/HepB/Hib),2
+2025,1,PNCC7V,Vacina pneumocócica 7V,1
+2025,1,SABOCR,Vacina pneumo 13,1
+2025,1,MENINGO AC,Vacina HPV quadrivalente,1
+2025,1,SABOLA,Vacina febre amarela,1
+2025,1,SABOCR,Vacina meningo B,1
+2025,1,SABOCR,Vacina hepatite A,1
+2025,1,SABOCR,Vacina meningo ACWY,1
+2025,1,MENINGO AC,Vacina hepatite B,1
+2025,1,MENINGO AC,Vacina meningo C,1
+2025,1,MENINGO AC,Vacina pneumo 23,1
+2025,1,VFA,Vacina pneumo 13,1
+2025,1,VFA,Vacina hepatite A infantil,1
+2025,1,SABOLA,Vacina pneumo 13,1
+2025,1,SAD,Soro antidiftérico,1
+2025,1,SABOLA,Vacina pneumo 23,1
+2025,1,VFA,"Vacina sarampo, caxumba, rubéola",1
+2025,1,VFA,Vacina rotavírus,1
+2025,1,SABOCR,Vacina Varíola Bavarian Nordic,1
+2025,1,VFA,Vacina meningo C,1

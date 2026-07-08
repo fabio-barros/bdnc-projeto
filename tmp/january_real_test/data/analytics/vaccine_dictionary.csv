@@ -1,0 +1,1353 @@
+codigo_vacina,sg_vacina,descricao_vacina,registros_observados
+142,BCG,Vacina BCG,1
+149,BCG,Vacina BCG,78
+150,BCG,Vacina BCG,3
+151,BCG,Vacina BCG,102
+152,BCG,Vacina BCG,109
+163,BCG,Vacina BCG,117475
+1659,BCG,Vacina BCG,5
+168,BCG,Vacina BCG,283
+17934,BCG,Vacina BCG,2
+2263,BCG,Vacina BCG,1
+239,BCG,Vacina BCG,1
+2769,BCG,Vacina BCG,1
+28289,BCG,Vacina BCG,2
+28303,BCG,Vacina BCG,4
+2862,BCG,Vacina BCG,1
+29501,BCG,Vacina BCG,1
+29909,BCG,Vacina BCG,1
+35978,BCG,Vacina BCG,1
+36271,BCG,Vacina BCG,1
+42488,BCG,Vacina BCG,3
+42490,BCG,Vacina BCG,2
+42507,BCG,Vacina BCG,2
+42932,BCG,Vacina BCG,1
+,BCG,Vacina BCG,106084
+150,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",1
+163,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",1
+29909,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",1
+30587,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",1
+,COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",9
+149,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",3
+163,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",1
+29909,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",3
+,COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",56
+,COVID-19 BHARAT - COVAXIN,Vacina COVID-19 BHARAT - COVAXIN inativada,4
+,COVID-19 GAMALEYA - SPUTNIK V,Vacina COVID-19 GAMALEYA - SPUTNIK V recombinante,2
+29909,COVID-19 JANSSEN - AD26.COV2.S,"Vacina COVID-19 JANSSEN - Ad26.COV2.S, recombinante",1
+30587,COVID-19 JANSSEN - AD26.COV2.S,"Vacina COVID-19 JANSSEN - Ad26.COV2.S, recombinante",4
+142,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",7
+149,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",3
+152,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",11
+161,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",1
+163,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",4810
+168,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",1
+2769,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",1
+28290,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",220
+29909,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",1
+35977,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",1
+35978,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",24397
+36271,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",18
+39262,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",2
+42430,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",66
+42507,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",17
+,COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",965
+,COVID-19 MODERNA - SPIKEVAX BIVALENTE,"Vacina COVID-19-RNAm, Moderna (Spikevax) bivalente",25
+142,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",17
+163,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",110
+16763,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",1
+17934,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",1
+28290,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",250
+31101,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",1
+35978,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",6
+39262,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",1
+44618,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",104
+,COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",84
+142,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",7
+149,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",1
+28290,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",56
+45086,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",1
+,COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",72
+142,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",46
+163,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",12
+16763,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",1
+28290,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",352
+2862,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",2
+44618,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",32
+,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",670
+142,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",67275
+149,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",5
+152,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",1
+159,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",1
+163,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",4
+28289,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",5
+28290,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",47974
+35978,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",6
+44618,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",313
+,COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",1821
+163,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",12896
+168,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",13
+29909,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",1
+31101,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",2
+35978,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",1
+,COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",1013
+142,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",3
+149,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",3
+152,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",12
+163,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",297860
+16763,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",2
+168,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",96
+27880,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",1
+28290,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",19
+2862,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",2
+29501,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",1
+30357,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",28
+35978,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",8
+36271,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",2
+39262,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",15
+42490,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",7
+,COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",76725
+29501,COVID-19 SINOVAC - CORONAVAC,Vacina COVID-19 SINOVAC - CORONAVAC inativada,5
+,COVID-19 SINOVAC - CORONAVAC,Vacina COVID-19 SINOVAC - CORONAVAC inativada,2
+152,COVID-19 SINOVAC/BUTANTAN - CORONAVAC,"Vacina COVID-19 SINOVAC/BUTANTAN - CORONAVAC, inativada",6
+29501,COVID-19 SINOVAC/BUTANTAN - CORONAVAC,"Vacina COVID-19 SINOVAC/BUTANTAN - CORONAVAC, inativada",2
+,COVID-19 SINOVAC/BUTANTAN - CORONAVAC,"Vacina COVID-19 SINOVAC/BUTANTAN - CORONAVAC, inativada",12
+142,DENGUE,Vacina dengue,14
+149,DENGUE,Vacina dengue,1
+152,DENGUE,Vacina dengue,10
+156,DENGUE,Vacina dengue,3
+159,DENGUE,Vacina dengue,3
+163,DENGUE,Vacina dengue,38
+165,DENGUE,Vacina dengue,7
+17934,DENGUE,Vacina dengue,232
+18190,DENGUE,Vacina dengue,3
+2260,DENGUE,Vacina dengue,449
+2263,DENGUE,Vacina dengue,1
+22942,DENGUE,Vacina dengue,51
+2355,DENGUE,Vacina dengue,28
+26513,DENGUE,Vacina dengue,1
+27816,DENGUE,Vacina dengue,3
+27880,DENGUE,Vacina dengue,1
+28211,DENGUE,Vacina dengue,1
+28251,DENGUE,Vacina dengue,18
+2862,DENGUE,Vacina dengue,220
+29501,DENGUE,Vacina dengue,1
+30587,DENGUE,Vacina dengue,11
+33713,DENGUE,Vacina dengue,1
+39262,DENGUE,Vacina dengue,1128
+39263,DENGUE,Vacina dengue,3078
+43202,DENGUE,Vacina dengue,1
+43499,DENGUE,Vacina dengue,1
+45240,DENGUE,Vacina dengue,60
+9406,DENGUE,Vacina dengue,1
+,DENGUE,Vacina dengue,3662
+,DILMENC,Diluente para vacina meningo C,3
+165,DILSRC,"Diluente para vacina sarampo, caxumba, rubéola",21
+165,DILVAR,Diluente para vacina varicela,5
+149,DILVR,Diluente para vacina raiva cultivo embrião de galinha,1
+165,DILVR,Diluente para vacina raiva cultivo embrião de galinha,1
+142,DNG,Vacina dengue (atenuada),15
+149,DNG,Vacina dengue (atenuada),48
+151,DNG,Vacina dengue (atenuada),2
+152,DNG,Vacina dengue (atenuada),323
+153,DNG,Vacina dengue (atenuada),6
+159,DNG,Vacina dengue (atenuada),2
+163,DNG,Vacina dengue (atenuada),4
+165,DNG,Vacina dengue (atenuada),25
+166,DNG,Vacina dengue (atenuada),49
+16763,DNG,Vacina dengue (atenuada),18
+17934,DNG,Vacina dengue (atenuada),2485
+18190,DNG,Vacina dengue (atenuada),22
+2250,DNG,Vacina dengue (atenuada),1
+2260,DNG,Vacina dengue (atenuada),321
+2263,DNG,Vacina dengue (atenuada),2
+26313,DNG,Vacina dengue (atenuada),1
+26513,DNG,Vacina dengue (atenuada),1
+27816,DNG,Vacina dengue (atenuada),1
+27880,DNG,Vacina dengue (atenuada),21
+28211,DNG,Vacina dengue (atenuada),14
+28251,DNG,Vacina dengue (atenuada),96
+28289,DNG,Vacina dengue (atenuada),3
+28290,DNG,Vacina dengue (atenuada),2
+28303,DNG,Vacina dengue (atenuada),1
+2862,DNG,Vacina dengue (atenuada),509
+29909,DNG,Vacina dengue (atenuada),2
+30587,DNG,Vacina dengue (atenuada),4
+35977,DNG,Vacina dengue (atenuada),306
+35978,DNG,Vacina dengue (atenuada),205
+36271,DNG,Vacina dengue (atenuada),11
+39262,DNG,Vacina dengue (atenuada),148199
+39263,DNG,Vacina dengue (atenuada),38931
+42430,DNG,Vacina dengue (atenuada),54
+42488,DNG,Vacina dengue (atenuada),51
+42932,DNG,Vacina dengue (atenuada),1
+43499,DNG,Vacina dengue (atenuada),2
+45240,DNG,Vacina dengue (atenuada),105
+608,DNG,Vacina dengue (atenuada),4
+,DNG,Vacina dengue (atenuada),281221
+12572,DT,Vacina difteria e tétano adulto,10
+141,DT,Vacina difteria e tétano adulto,1
+142,DT,Vacina difteria e tétano adulto,9
+149,DT,Vacina difteria e tétano adulto,542
+150,DT,Vacina difteria e tétano adulto,17
+152,DT,Vacina difteria e tétano adulto,1321
+159,DT,Vacina difteria e tétano adulto,33
+163,DT,Vacina difteria e tétano adulto,125613
+164,DT,Vacina difteria e tétano adulto,91
+165,DT,Vacina difteria e tétano adulto,52
+167,DT,Vacina difteria e tétano adulto,1
+16763,DT,Vacina difteria e tétano adulto,230677
+168,DT,Vacina difteria e tétano adulto,318
+17934,DT,Vacina difteria e tétano adulto,796
+18190,DT,Vacina difteria e tétano adulto,1919
+2260,DT,Vacina difteria e tétano adulto,2
+239,DT,Vacina difteria e tétano adulto,18
+26513,DT,Vacina difteria e tétano adulto,1
+2769,DT,Vacina difteria e tétano adulto,5
+27880,DT,Vacina difteria e tétano adulto,14
+27883,DT,Vacina difteria e tétano adulto,1
+28251,DT,Vacina difteria e tétano adulto,14
+28283,DT,Vacina difteria e tétano adulto,1
+28289,DT,Vacina difteria e tétano adulto,2
+28303,DT,Vacina difteria e tétano adulto,2
+2862,DT,Vacina difteria e tétano adulto,98
+29501,DT,Vacina difteria e tétano adulto,72
+29909,DT,Vacina difteria e tétano adulto,6
+30587,DT,Vacina difteria e tétano adulto,2
+3521,DT,Vacina difteria e tétano adulto,1
+35978,DT,Vacina difteria e tétano adulto,22
+35979,DT,Vacina difteria e tétano adulto,4
+36271,DT,Vacina difteria e tétano adulto,1
+39262,DT,Vacina difteria e tétano adulto,1
+42488,DT,Vacina difteria e tétano adulto,3
+42489,DT,Vacina difteria e tétano adulto,6
+42490,DT,Vacina difteria e tétano adulto,1
+42655,DT,Vacina difteria e tétano adulto,1
+43499,DT,Vacina difteria e tétano adulto,2
+44779,DT,Vacina difteria e tétano adulto,1
+712,DT,Vacina difteria e tétano adulto,1
+,DT,Vacina difteria e tétano adulto,589398
+149,DT,Vacina difteria e tétano infantil,3
+152,DT,Vacina difteria e tétano infantil,2
+163,DT,Vacina difteria e tétano infantil,16
+16763,DT,Vacina difteria e tétano infantil,28
+27880,DT,Vacina difteria e tétano infantil,1
+42489,DT,Vacina difteria e tétano infantil,5
+,DT,Vacina difteria e tétano infantil,588
+142,DTP,Vacina DTP,2
+149,DTP,Vacina DTP,207
+150,DTP,Vacina DTP,20
+151,DTP,Vacina DTP,27
+152,DTP,Vacina DTP,625
+159,DTP,Vacina DTP,14
+163,DTP,Vacina DTP,114303
+165,DTP,Vacina DTP,9
+16763,DTP,Vacina DTP,1302
+168,DTP,Vacina DTP,781
+17934,DTP,Vacina DTP,209
+2263,DTP,Vacina DTP,1
+239,DTP,Vacina DTP,4
+2560,DTP,Vacina DTP,1
+27880,DTP,Vacina DTP,196
+28251,DTP,Vacina DTP,7
+28303,DTP,Vacina DTP,29
+2862,DTP,Vacina DTP,30
+29501,DTP,Vacina DTP,10
+30587,DTP,Vacina DTP,8
+42488,DTP,Vacina DTP,1
+42507,DTP,Vacina DTP,1
+42655,DTP,Vacina DTP,1
+42932,DTP,Vacina DTP,1
+43202,DTP,Vacina DTP,2
+44618,DTP,Vacina DTP,1
+608,DTP,Vacina DTP,1
+,DTP,Vacina DTP,342410
+142,DTPA,Vacina DTPa infantil,1
+152,DTPA,Vacina DTPa infantil,6
+159,DTPA,Vacina DTPa infantil,1273
+163,DTPA,Vacina DTPa infantil,4
+165,DTPA,Vacina DTPa infantil,12
+27880,DTPA,Vacina DTPa infantil,457
+28251,DTPA,Vacina DTPa infantil,10
+28289,DTPA,Vacina DTPa infantil,54
+2862,DTPA,Vacina DTPa infantil,386
+43202,DTPA,Vacina DTPa infantil,1
+,DTPA,Vacina DTPa infantil,949
+12551,DTPA,Vacina dTpa adulto,69
+141,DTPA,Vacina dTpa adulto,35
+142,DTPA,Vacina dTpa adulto,29
+149,DTPA,Vacina dTpa adulto,396
+150,DTPA,Vacina dTpa adulto,19
+152,DTPA,Vacina dTpa adulto,92271
+159,DTPA,Vacina dTpa adulto,2812
+160,DTPA,Vacina dTpa adulto,10
+161,DTPA,Vacina dTpa adulto,1
+163,DTPA,Vacina dTpa adulto,81
+164,DTPA,Vacina dTpa adulto,1
+165,DTPA,Vacina dTpa adulto,123
+1659,DTPA,Vacina dTpa adulto,61
+16763,DTPA,Vacina dTpa adulto,130
+168,DTPA,Vacina dTpa adulto,2
+17934,DTPA,Vacina dTpa adulto,10
+18190,DTPA,Vacina dTpa adulto,1
+2250,DTPA,Vacina dTpa adulto,1
+25538,DTPA,Vacina dTpa adulto,3
+27880,DTPA,Vacina dTpa adulto,7755
+28251,DTPA,Vacina dTpa adulto,190
+28289,DTPA,Vacina dTpa adulto,2789
+28303,DTPA,Vacina dTpa adulto,4
+2862,DTPA,Vacina dTpa adulto,1702
+2901,DTPA,Vacina dTpa adulto,1
+29501,DTPA,Vacina dTpa adulto,381
+39262,DTPA,Vacina dTpa adulto,121
+42490,DTPA,Vacina dTpa adulto,1
+42931,DTPA,Vacina dTpa adulto,1
+42932,DTPA,Vacina dTpa adulto,2
+43175,DTPA,Vacina dTpa adulto,13
+43202,DTPA,Vacina dTpa adulto,760
+43499,DTPA,Vacina dTpa adulto,1
+43897,DTPA,Vacina dTpa adulto,1
+44618,DTPA,Vacina dTpa adulto,1
+45686,DTPA,Vacina dTpa adulto,5
+,DTPA,Vacina dTpa adulto,144603
+149,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,2
+152,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,1
+159,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,3
+165,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,4
+27880,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,603
+28251,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,42
+28289,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,368
+2862,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,95
+43175,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,2
+43202,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,1
+,DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,27
+152,FLU ID,Vacina influenza ID,10
+,FLU ID,Vacina influenza ID,51
+2862,FTA,Vacina febre tifóide (atenuada),127
+,FTA,Vacina febre tifóide (atenuada),14
+142,FTP,Vacina febre tifóide,5
+149,FTP,Vacina febre tifóide,3
+161,FTP,Vacina febre tifóide,1
+16763,FTP,Vacina febre tifóide,1
+28251,FTP,Vacina febre tifóide,46
+2862,FTP,Vacina febre tifóide,423
+36271,FTP,Vacina febre tifóide,1
+,FTP,Vacina febre tifóide,75
+142,GRIPE SAZONAL,Vacina gripe,15
+152,GRIPE SAZONAL,Vacina gripe,3
+27880,GRIPE SAZONAL,Vacina gripe,15
+36271,GRIPE SAZONAL,Vacina gripe,83
+,GRIPE SAZONAL,Vacina gripe,97
+142,H1N1,Vacina Influenza H1N1,2
+149,H1N1,Vacina Influenza H1N1,1
+152,H1N1,Vacina Influenza H1N1,179
+27880,H1N1,Vacina Influenza H1N1,9
+36271,H1N1,Vacina Influenza H1N1,5
+,H1N1,Vacina Influenza H1N1,1404
+152,HA,Vacina hepatite A,31
+159,HA,Vacina hepatite A,5
+165,HA,Vacina hepatite A,1583
+168,HA,Vacina hepatite A,4
+26313,HA,Vacina hepatite A,486
+2769,HA,Vacina hepatite A,12
+27880,HA,Vacina hepatite A,7
+28289,HA,Vacina hepatite A,22
+29501,HA,Vacina hepatite A,222
+42490,HA,Vacina hepatite A,42
+42932,HA,Vacina hepatite A,12
+,HA,Vacina hepatite A,443
+142,HAEHB,Vacina hepatite AeB (uso adulto),2
+152,HAEHB,Vacina hepatite AeB (uso adulto),3
+159,HAEHB,Vacina hepatite AeB (uso adulto),145
+163,HAEHB,Vacina hepatite AeB (uso adulto),2
+26313,HAEHB,Vacina hepatite AeB (uso adulto),1
+27880,HAEHB,Vacina hepatite AeB (uso adulto),1043
+28289,HAEHB,Vacina hepatite AeB (uso adulto),611
+42490,HAEHB,Vacina hepatite AeB (uso adulto),1
+43175,HAEHB,Vacina hepatite AeB (uso adulto),1
+,HAEHB,Vacina hepatite AeB (uso adulto),38
+152,HAEHBPED,Hepatite AeB (pediátrica),2
+159,HAEHBPED,Hepatite AeB (pediátrica),1
+165,HAEHBPED,Hepatite AeB (pediátrica),22
+26313,HAEHBPED,Hepatite AeB (pediátrica),10
+27880,HAEHBPED,Hepatite AeB (pediátrica),177
+28289,HAEHBPED,Hepatite AeB (pediátrica),1
+2862,HAEHBPED,Hepatite AeB (pediátrica),1
+42932,HAEHBPED,Hepatite AeB (pediátrica),1
+,HAEHBPED,Hepatite AeB (pediátrica),9
+142,HEPAAD,Vacina hepatite A adulto,101
+149,HEPAAD,Vacina hepatite A adulto,2
+150,HEPAAD,Vacina hepatite A adulto,2
+152,HEPAAD,Vacina hepatite A adulto,80
+159,HEPAAD,Vacina hepatite A adulto,1
+165,HEPAAD,Vacina hepatite A adulto,1495
+25538,HEPAAD,Vacina hepatite A adulto,17
+26313,HEPAAD,Vacina hepatite A adulto,2405
+27880,HEPAAD,Vacina hepatite A adulto,6
+27883,HEPAAD,Vacina hepatite A adulto,4
+28251,HEPAAD,Vacina hepatite A adulto,1
+28289,HEPAAD,Vacina hepatite A adulto,10
+28290,HEPAAD,Vacina hepatite A adulto,1
+28303,HEPAAD,Vacina hepatite A adulto,1
+29501,HEPAAD,Vacina hepatite A adulto,116
+42490,HEPAAD,Vacina hepatite A adulto,1977
+42931,HEPAAD,Vacina hepatite A adulto,20
+42932,HEPAAD,Vacina hepatite A adulto,488
+,HEPAAD,Vacina hepatite A adulto,2005
+142,HEPAINF,Vacina hepatite A infantil,351
+149,HEPAINF,Vacina hepatite A infantil,270
+150,HEPAINF,Vacina hepatite A infantil,26
+152,HEPAINF,Vacina hepatite A infantil,54114
+159,HEPAINF,Vacina hepatite A infantil,111
+163,HEPAINF,Vacina hepatite A infantil,44
+165,HEPAINF,Vacina hepatite A infantil,14605
+1659,HEPAINF,Vacina hepatite A infantil,24
+16763,HEPAINF,Vacina hepatite A infantil,45
+168,HEPAINF,Vacina hepatite A infantil,34
+17934,HEPAINF,Vacina hepatite A infantil,6
+18189,HEPAINF,Vacina hepatite A infantil,1
+25538,HEPAINF,Vacina hepatite A infantil,28
+2560,HEPAINF,Vacina hepatite A infantil,50
+26313,HEPAINF,Vacina hepatite A infantil,619
+2769,HEPAINF,Vacina hepatite A infantil,84
+27880,HEPAINF,Vacina hepatite A infantil,1107
+27883,HEPAINF,Vacina hepatite A infantil,4
+28251,HEPAINF,Vacina hepatite A infantil,3
+28289,HEPAINF,Vacina hepatite A infantil,201
+28290,HEPAINF,Vacina hepatite A infantil,23
+28303,HEPAINF,Vacina hepatite A infantil,2
+2862,HEPAINF,Vacina hepatite A infantil,58
+29501,HEPAINF,Vacina hepatite A infantil,6860
+35977,HEPAINF,Vacina hepatite A infantil,1
+35978,HEPAINF,Vacina hepatite A infantil,37
+35979,HEPAINF,Vacina hepatite A infantil,1
+42490,HEPAINF,Vacina hepatite A infantil,18711
+42655,HEPAINF,Vacina hepatite A infantil,4
+42931,HEPAINF,Vacina hepatite A infantil,25
+42932,HEPAINF,Vacina hepatite A infantil,4099
+44618,HEPAINF,Vacina hepatite A infantil,15
+,HEPAINF,Vacina hepatite A infantil,151829
+141,HEPB,Vacina hepatite B,107
+149,HEPB,Vacina hepatite B,330
+150,HEPB,Vacina hepatite B,33
+152,HEPB,Vacina hepatite B,381334
+159,HEPB,Vacina hepatite B,80
+160,HEPB,Vacina hepatite B,3
+161,HEPB,Vacina hepatite B,1
+163,HEPB,Vacina hepatite B,130
+164,HEPB,Vacina hepatite B,15150
+165,HEPB,Vacina hepatite B,2
+1659,HEPB,Vacina hepatite B,17
+16763,HEPB,Vacina hepatite B,51
+168,HEPB,Vacina hepatite B,1
+17934,HEPB,Vacina hepatite B,8
+18190,HEPB,Vacina hepatite B,1
+1913,HEPB,Vacina hepatite B,1
+22942,HEPB,Vacina hepatite B,448
+239,HEPB,Vacina hepatite B,1
+26313,HEPB,Vacina hepatite B,3
+2769,HEPB,Vacina hepatite B,41
+27880,HEPB,Vacina hepatite B,1287
+28251,HEPB,Vacina hepatite B,1
+28289,HEPB,Vacina hepatite B,4
+2862,HEPB,Vacina hepatite B,6
+29501,HEPB,Vacina hepatite B,1783
+35977,HEPB,Vacina hepatite B,7
+35978,HEPB,Vacina hepatite B,2
+36271,HEPB,Vacina hepatite B,2
+39262,HEPB,Vacina hepatite B,235
+42490,HEPB,Vacina hepatite B,3
+42507,HEPB,Vacina hepatite B,1
+42932,HEPB,Vacina hepatite B,1
+43175,HEPB,Vacina hepatite B,1
+43202,HEPB,Vacina hepatite B,2
+43499,HEPB,Vacina hepatite B,1
+44779,HEPB,Vacina hepatite B,1
+608,HEPB,Vacina hepatite B,2
+,HEPB,Vacina hepatite B,502939
+142,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),137
+149,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),18
+152,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),4
+159,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),1568
+160,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),1
+161,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),34
+163,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),3
+164,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),1
+165,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),28
+16763,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),2
+2263,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),8
+26313,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),4
+27880,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),6532
+28251,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),1967
+28289,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),3127
+28290,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),4
+2862,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),22457
+42932,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),2
+43175,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),6
+43202,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),7
+,HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),4613
+149,HIB,Vacina Hib,8
+152,HIB,Vacina Hib,48
+163,HIB,Vacina Hib,12820
+165,HIB,Vacina Hib,34
+168,HIB,Vacina Hib,1
+2560,HIB,Vacina Hib,2
+27880,HIB,Vacina Hib,1
+2862,HIB,Vacina Hib,3
+36271,HIB,Vacina Hib,1
+,HIB,Vacina Hib,3353
+26313,HPV BI,Vacina HPV bivalente,25
+27880,HPV BI,Vacina HPV bivalente,13
+,HPV BI,Vacina HPV bivalente,2
+152,HPV2,Vacina HPV bivalente,3
+165,HPV2,Vacina HPV bivalente,1
+27880,HPV2,Vacina HPV bivalente,14
+,HPV2,Vacina HPV bivalente,61
+141,HPV4,Vacina HPV quadrivalente,40
+142,HPV4,Vacina HPV quadrivalente,9
+149,HPV4,Vacina HPV quadrivalente,737
+150,HPV4,Vacina HPV quadrivalente,43
+152,HPV4,Vacina HPV quadrivalente,119735
+153,HPV4,Vacina HPV quadrivalente,1
+159,HPV4,Vacina HPV quadrivalente,67
+163,HPV4,Vacina HPV quadrivalente,7
+164,HPV4,Vacina HPV quadrivalente,6
+165,HPV4,Vacina HPV quadrivalente,8966
+1659,HPV4,Vacina HPV quadrivalente,20
+16763,HPV4,Vacina HPV quadrivalente,14
+17934,HPV4,Vacina HPV quadrivalente,1
+25538,HPV4,Vacina HPV quadrivalente,150
+26313,HPV4,Vacina HPV quadrivalente,1795
+27880,HPV4,Vacina HPV quadrivalente,88
+28738,HPV4,Vacina HPV quadrivalente,1
+29501,HPV4,Vacina HPV quadrivalente,610
+36271,HPV4,Vacina HPV quadrivalente,2
+39263,HPV4,Vacina HPV quadrivalente,1
+42490,HPV4,Vacina HPV quadrivalente,1
+42507,HPV4,Vacina HPV quadrivalente,1
+42931,HPV4,Vacina HPV quadrivalente,79
+42932,HPV4,Vacina HPV quadrivalente,4905
+,HPV4,Vacina HPV quadrivalente,190965
+12551,HPV9,Vacina HPV nonavalente,1
+142,HPV9,Vacina HPV nonavalente,55
+149,HPV9,Vacina HPV nonavalente,1
+152,HPV9,Vacina HPV nonavalente,15
+159,HPV9,Vacina HPV nonavalente,9
+165,HPV9,Vacina HPV nonavalente,15132
+2263,HPV9,Vacina HPV nonavalente,1
+25538,HPV9,Vacina HPV nonavalente,1
+26313,HPV9,Vacina HPV nonavalente,5937
+26513,HPV9,Vacina HPV nonavalente,1
+27880,HPV9,Vacina HPV nonavalente,78
+27883,HPV9,Vacina HPV nonavalente,1
+28251,HPV9,Vacina HPV nonavalente,1
+28289,HPV9,Vacina HPV nonavalente,14
+36271,HPV9,Vacina HPV nonavalente,31
+42931,HPV9,Vacina HPV nonavalente,43
+42932,HPV9,Vacina HPV nonavalente,4083
+43175,HPV9,Vacina HPV nonavalente,3
+45086,HPV9,Vacina HPV nonavalente,1
+,HPV9,Vacina HPV nonavalente,53
+12551,IGHHB,Imunoglobulina humana anti-hepatite B,327
+141,IGHHB,Imunoglobulina humana anti-hepatite B,1
+149,IGHHB,Imunoglobulina humana anti-hepatite B,1
+152,IGHHB,Imunoglobulina humana anti-hepatite B,22
+163,IGHHB,Imunoglobulina humana anti-hepatite B,1
+2260,IGHHB,Imunoglobulina humana anti-hepatite B,4
+26513,IGHHB,Imunoglobulina humana anti-hepatite B,2
+29909,IGHHB,Imunoglobulina humana anti-hepatite B,1
+33713,IGHHB,Imunoglobulina humana anti-hepatite B,1
+,IGHHB,Imunoglobulina humana anti-hepatite B,93
+12551,IGHR,Imunoglobulina humana antirrábica,5
+149,IGHR,Imunoglobulina humana antirrábica,6
+152,IGHR,Imunoglobulina humana antirrábica,751
+163,IGHR,Imunoglobulina humana antirrábica,2
+166,IGHR,Imunoglobulina humana antirrábica,2
+16763,IGHR,Imunoglobulina humana antirrábica,1
+2260,IGHR,Imunoglobulina humana antirrábica,11
+28211,IGHR,Imunoglobulina humana antirrábica,2041
+2862,IGHR,Imunoglobulina humana antirrábica,14
+,IGHR,Imunoglobulina humana antirrábica,2838
+152,IGHT,Imunoglobulina humana antitétano,29
+156,IGHT,Imunoglobulina humana antitétano,19
+163,IGHT,Imunoglobulina humana antitétano,22
+16763,IGHT,Imunoglobulina humana antitétano,15
+2260,IGHT,Imunoglobulina humana antitétano,21
+26513,IGHT,Imunoglobulina humana antitétano,388
+36271,IGHT,Imunoglobulina humana antitétano,1
+,IGHT,Imunoglobulina humana antitétano,69
+160,IGHV,Imunoglobulina humana antivaricela,1
+28211,IGHV,Imunoglobulina humana antivaricela,27
+42932,IGHV,Imunoglobulina humana antivaricela,1
+,IGHV,Imunoglobulina humana antivaricela,5
+142,INF3,Vacina influenza trivalente,4
+149,INF3,Vacina influenza trivalente,97
+152,INF3,Vacina influenza trivalente,65698
+159,INF3,Vacina influenza trivalente,47
+163,INF3,Vacina influenza trivalente,8
+16763,INF3,Vacina influenza trivalente,3
+239,INF3,Vacina influenza trivalente,1
+27880,INF3,Vacina influenza trivalente,1
+28290,INF3,Vacina influenza trivalente,1
+2862,INF3,Vacina influenza trivalente,5
+29501,INF3,Vacina influenza trivalente,11
+29909,INF3,Vacina influenza trivalente,4
+33713,INF3,Vacina influenza trivalente,1
+35978,INF3,Vacina influenza trivalente,1
+36271,INF3,Vacina influenza trivalente,149
+42507,INF3,Vacina influenza trivalente,1
+608,INF3,Vacina influenza trivalente,4
+,INF3,Vacina influenza trivalente,30186
+142,INF4,Vacina influenza tetravalente,1
+149,INF4,Vacina influenza tetravalente,2
+152,INF4,Vacina influenza tetravalente,692
+159,INF4,Vacina influenza tetravalente,3
+163,INF4,Vacina influenza tetravalente,2
+165,INF4,Vacina influenza tetravalente,8
+16763,INF4,Vacina influenza tetravalente,1
+27880,INF4,Vacina influenza tetravalente,12
+28251,INF4,Vacina influenza tetravalente,33
+28289,INF4,Vacina influenza tetravalente,4
+2862,INF4,Vacina influenza tetravalente,20
+33502,INF4,Vacina influenza tetravalente,1
+36271,INF4,Vacina influenza tetravalente,2917
+608,INF4,Vacina influenza tetravalente,60
+,INF4,Vacina influenza tetravalente,235
+28251,INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,1
+28289,INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,2
+2862,INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,4
+,INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,25
+142,MEN BC,Vacina meningocócica B/C,2
+159,MEN BC,Vacina meningocócica B/C,3
+27880,MEN BC,Vacina meningocócica B/C,181
+36271,MEN BC,Vacina meningocócica B/C,1
+,MEN BC,Vacina meningocócica B/C,10
+12551,MENACWY,Vacina meningo ACWY,1
+12572,MENACWY,Vacina meningo ACWY,1
+142,MENACWY,Vacina meningo ACWY,23090
+149,MENACWY,Vacina meningo ACWY,72007
+150,MENACWY,Vacina meningo ACWY,249
+152,MENACWY,Vacina meningo ACWY,648
+159,MENACWY,Vacina meningo ACWY,57252
+160,MENACWY,Vacina meningo ACWY,6
+163,MENACWY,Vacina meningo ACWY,11
+164,MENACWY,Vacina meningo ACWY,2
+165,MENACWY,Vacina meningo ACWY,112
+166,MENACWY,Vacina meningo ACWY,8
+16763,MENACWY,Vacina meningo ACWY,69
+168,MENACWY,Vacina meningo ACWY,1
+17934,MENACWY,Vacina meningo ACWY,3
+18190,MENACWY,Vacina meningo ACWY,156
+2260,MENACWY,Vacina meningo ACWY,1
+2263,MENACWY,Vacina meningo ACWY,1303
+2355,MENACWY,Vacina meningo ACWY,49
+2560,MENACWY,Vacina meningo ACWY,8
+26313,MENACWY,Vacina meningo ACWY,5
+27880,MENACWY,Vacina meningo ACWY,46369
+27883,MENACWY,Vacina meningo ACWY,2
+28251,MENACWY,Vacina meningo ACWY,254
+28289,MENACWY,Vacina meningo ACWY,6275
+28290,MENACWY,Vacina meningo ACWY,5336
+28303,MENACWY,Vacina meningo ACWY,24
+2862,MENACWY,Vacina meningo ACWY,5080
+30587,MENACWY,Vacina meningo ACWY,1
+35977,MENACWY,Vacina meningo ACWY,2
+35978,MENACWY,Vacina meningo ACWY,6
+36271,MENACWY,Vacina meningo ACWY,2
+39262,MENACWY,Vacina meningo ACWY,7
+42931,MENACWY,Vacina meningo ACWY,1
+42932,MENACWY,Vacina meningo ACWY,3
+43175,MENACWY,Vacina meningo ACWY,5933
+43202,MENACWY,Vacina meningo ACWY,17
+45086,MENACWY,Vacina meningo ACWY,3
+608,MENACWY,Vacina meningo ACWY,6
+,MENACWY,Vacina meningo ACWY,311657
+12551,MENB,Vacina meningo B,1
+142,MENB,Vacina meningo B,263
+150,MENB,Vacina meningo B,1
+159,MENB,Vacina meningo B,6522
+165,MENB,Vacina meningo B,89
+2263,MENB,Vacina meningo B,31
+2355,MENB,Vacina meningo B,206
+26313,MENB,Vacina meningo B,32
+27880,MENB,Vacina meningo B,41000
+28289,MENB,Vacina meningo B,7046
+28290,MENB,Vacina meningo B,3
+2862,MENB,Vacina meningo B,3
+35977,MENB,Vacina meningo B,1
+39263,MENB,Vacina meningo B,1
+43175,MENB,Vacina meningo B,125
+43202,MENB,Vacina meningo B,61
+,MENB,Vacina meningo B,731
+142,MENC,Vacina meningo C,121
+149,MENC,Vacina meningo C,3663
+150,MENC,Vacina meningo C,75327
+151,MENC,Vacina meningo C,22
+152,MENC,Vacina meningo C,1688
+159,MENC,Vacina meningo C,33011
+160,MENC,Vacina meningo C,2
+161,MENC,Vacina meningo C,1
+162,MENC,Vacina meningo C,731
+163,MENC,Vacina meningo C,33
+165,MENC,Vacina meningo C,82
+1659,MENC,Vacina meningo C,9
+166,MENC,Vacina meningo C,34
+16763,MENC,Vacina meningo C,41
+168,MENC,Vacina meningo C,1
+17934,MENC,Vacina meningo C,3
+18190,MENC,Vacina meningo C,321
+2263,MENC,Vacina meningo C,69
+2355,MENC,Vacina meningo C,46
+239,MENC,Vacina meningo C,41
+27880,MENC,Vacina meningo C,22535
+28289,MENC,Vacina meningo C,835
+28290,MENC,Vacina meningo C,5
+28303,MENC,Vacina meningo C,5
+2862,MENC,Vacina meningo C,9
+29501,MENC,Vacina meningo C,37
+36271,MENC,Vacina meningo C,2
+39263,MENC,Vacina meningo C,1
+42490,MENC,Vacina meningo C,2
+42507,MENC,Vacina meningo C,18
+42655,MENC,Vacina meningo C,50
+42932,MENC,Vacina meningo C,2
+43175,MENC,Vacina meningo C,17513
+43202,MENC,Vacina meningo C,3
+44618,MENC,Vacina meningo C,1
+608,MENC,Vacina meningo C,91
+,MENC,Vacina meningo C,321647
+152,MENINGO AC,Vacina HPV quadrivalente,1
+152,MENINGO AC,Vacina hepatite B,1
+150,MENINGO AC,Vacina meningo C,1
+,MENINGO AC,Vacina meningocócica AC,4
+26313,MENINGO AC,Vacina pneumo 23,1
+152,MENINGO AC,Vacina raiva em cultivo celular vero,471
+28251,MENINGO AC,Vacina raiva em cultivo celular vero,1
+2862,MENINGO AC,Vacina raiva em cultivo celular vero,337
+,MENINGO AC,Vacina raiva em cultivo celular vero,456
+10534,PENTA,Vacina penta (DTP/HepB/Hib),1
+142,PENTA,Vacina penta (DTP/HepB/Hib),2
+149,PENTA,Vacina penta (DTP/HepB/Hib),639
+150,PENTA,Vacina penta (DTP/HepB/Hib),22
+152,PENTA,Vacina penta (DTP/HepB/Hib),363
+159,PENTA,Vacina penta (DTP/HepB/Hib),303
+161,PENTA,Vacina penta (DTP/HepB/Hib),1
+163,PENTA,Vacina penta (DTP/HepB/Hib),99871
+164,PENTA,Vacina penta (DTP/HepB/Hib),2
+165,PENTA,Vacina penta (DTP/HepB/Hib),2
+1659,PENTA,Vacina penta (DTP/HepB/Hib),4
+16763,PENTA,Vacina penta (DTP/HepB/Hib),279
+168,PENTA,Vacina penta (DTP/HepB/Hib),779
+17934,PENTA,Vacina penta (DTP/HepB/Hib),774
+18190,PENTA,Vacina penta (DTP/HepB/Hib),2
+22942,PENTA,Vacina penta (DTP/HepB/Hib),25
+2355,PENTA,Vacina penta (DTP/HepB/Hib),5
+239,PENTA,Vacina penta (DTP/HepB/Hib),1
+2560,PENTA,Vacina penta (DTP/HepB/Hib),692
+26313,PENTA,Vacina penta (DTP/HepB/Hib),7
+2769,PENTA,Vacina penta (DTP/HepB/Hib),245
+27880,PENTA,Vacina penta (DTP/HepB/Hib),240
+28251,PENTA,Vacina penta (DTP/HepB/Hib),20
+28289,PENTA,Vacina penta (DTP/HepB/Hib),14
+28290,PENTA,Vacina penta (DTP/HepB/Hib),104
+28303,PENTA,Vacina penta (DTP/HepB/Hib),54315
+2862,PENTA,Vacina penta (DTP/HepB/Hib),1394
+29501,PENTA,Vacina penta (DTP/HepB/Hib),15
+29909,PENTA,Vacina penta (DTP/HepB/Hib),23
+33713,PENTA,Vacina penta (DTP/HepB/Hib),1
+3521,PENTA,Vacina penta (DTP/HepB/Hib),1
+35978,PENTA,Vacina penta (DTP/HepB/Hib),2
+35979,PENTA,Vacina penta (DTP/HepB/Hib),2
+36271,PENTA,Vacina penta (DTP/HepB/Hib),1
+39263,PENTA,Vacina penta (DTP/HepB/Hib),1
+42488,PENTA,Vacina penta (DTP/HepB/Hib),8
+42489,PENTA,Vacina penta (DTP/HepB/Hib),1
+42490,PENTA,Vacina penta (DTP/HepB/Hib),3
+42507,PENTA,Vacina penta (DTP/HepB/Hib),3
+42931,PENTA,Vacina penta (DTP/HepB/Hib),7
+43175,PENTA,Vacina penta (DTP/HepB/Hib),2
+44618,PENTA,Vacina penta (DTP/HepB/Hib),57
+608,PENTA,Vacina penta (DTP/HepB/Hib),3
+,PENTA,Vacina penta (DTP/HepB/Hib),523263
+142,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),53
+149,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),16
+152,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),4
+159,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),549
+161,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),11
+163,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),3
+165,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),13
+16763,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),1
+26313,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),1
+27880,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),4913
+28251,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),1728
+28289,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),157
+28290,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),1
+28303,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),3
+2862,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),4614
+42932,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),16
+43175,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),13
+43202,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),4
+44618,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),1
+,PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),483
+,PNCC7V,Vacina pneumocócica 7V,1
+142,QUADRUPLA VIRAL,Vacina quádrupla viral,21
+165,QUADRUPLA VIRAL,Vacina quádrupla viral,211
+26313,QUADRUPLA VIRAL,Vacina quádrupla viral,9
+,QUADRUPLA VIRAL,Vacina quádrupla viral,2
+13219,ROTA,Vacina rotavírus,1
+142,ROTA,Vacina rotavírus,1
+149,ROTA,Vacina rotavírus,118783
+150,ROTA,Vacina rotavírus,42
+151,ROTA,Vacina rotavírus,2
+152,ROTA,Vacina rotavírus,281
+159,ROTA,Vacina rotavírus,1693
+163,ROTA,Vacina rotavírus,48
+165,ROTA,Vacina rotavírus,531
+1659,ROTA,Vacina rotavírus,6
+166,ROTA,Vacina rotavírus,2
+16763,ROTA,Vacina rotavírus,26
+169,ROTA,Vacina rotavírus,1
+17934,ROTA,Vacina rotavírus,4
+2560,ROTA,Vacina rotavírus,3
+26313,ROTA,Vacina rotavírus,60
+27880,ROTA,Vacina rotavírus,1066
+28211,ROTA,Vacina rotavírus,1
+28289,ROTA,Vacina rotavírus,299
+28290,ROTA,Vacina rotavírus,1
+28303,ROTA,Vacina rotavírus,6
+2862,ROTA,Vacina rotavírus,1
+29909,ROTA,Vacina rotavírus,461
+33713,ROTA,Vacina rotavírus,2
+35978,ROTA,Vacina rotavírus,1
+36271,ROTA,Vacina rotavírus,1
+42507,ROTA,Vacina rotavírus,1
+42932,ROTA,Vacina rotavírus,32
+43175,ROTA,Vacina rotavírus,1
+43202,ROTA,Vacina rotavírus,3
+608,ROTA,Vacina rotavírus,1
+,ROTA,Vacina rotavírus,296086
+142,ROTA5,Vacina rotavírus pentavalente,71
+149,ROTA5,Vacina rotavírus pentavalente,5
+150,ROTA5,Vacina rotavírus pentavalente,1
+163,ROTA5,Vacina rotavírus pentavalente,1
+165,ROTA5,Vacina rotavírus pentavalente,19820
+16763,ROTA5,Vacina rotavírus pentavalente,1
+25538,ROTA5,Vacina rotavírus pentavalente,4
+26313,ROTA5,Vacina rotavírus pentavalente,1515
+27880,ROTA5,Vacina rotavírus pentavalente,34
+27883,ROTA5,Vacina rotavírus pentavalente,2
+28289,ROTA5,Vacina rotavírus pentavalente,160
+28290,ROTA5,Vacina rotavírus pentavalente,1
+28303,ROTA5,Vacina rotavírus pentavalente,2
+2862,ROTA5,Vacina rotavírus pentavalente,4
+42931,ROTA5,Vacina rotavírus pentavalente,46
+42932,ROTA5,Vacina rotavírus pentavalente,5953
+,ROTA5,Vacina rotavírus pentavalente,469
+152,SABOCR,Soro antibotrópico (pentavalente) e anticrotálico,22
+,SABOCR,Soro antibotrópico (pentavalente) e anticrotálico,13
+152,SABOCR,Vacina HPV quadrivalente,2
+27880,SABOCR,"Vacina Herpes-Zoster, recombinante",19
+27880,SABOCR,Vacina Tetra Acelular dTpa/VIP,2
+,SABOCR,Vacina Varíola Bavarian Nordic,1
+27880,SABOCR,Vacina dTpa adulto,6
+39263,SABOCR,Vacina dengue (atenuada),4
+28251,SABOCR,Vacina febre amarela,6
+165,SABOCR,Vacina hepatite A,1
+28251,SABOCR,Vacina meningo ACWY,1
+27880,SABOCR,Vacina meningo B,1
+142,SABOCR,Vacina pneumo 13,1
+26313,SABOCR,Vacina pneumo 23,3
+149,SABOCR,Vacina raiva em cultivo celular vero,8
+152,SABOCR,Vacina raiva em cultivo celular vero,787
+165,SABOCR,Vacina raiva em cultivo celular vero,1
+28251,SABOCR,Vacina raiva em cultivo celular vero,4
+2862,SABOCR,Vacina raiva em cultivo celular vero,786
+,SABOCR,Vacina raiva em cultivo celular vero,3465
+152,SABOCR,Vacina raiva embrião de galinha,12
+2862,SABOCR,Vacina raiva embrião de galinha,13
+142,SABOCR,"VsR (re combinante, adjuvada)",6
+152,SABOLA,Soro antibotrópico (pentavalente) e antilaquético,32
+,SABOLA,Soro antibotrópico (pentavalente) e antilaquético,9
+165,SABOLA,Vacina HPV nonavalente,4
+27880,SABOLA,"Vacina Herpes-Zoster, recombinante",2
+39263,SABOLA,Vacina dengue (atenuada),3
+2862,SABOLA,Vacina febre amarela,1
+142,SABOLA,Vacina pneumo 13,1
+26313,SABOLA,Vacina pneumo 23,1
+149,SABOLA,Vacina raiva em cultivo celular vero,23
+152,SABOLA,Vacina raiva em cultivo celular vero,14109
+153,SABOLA,Vacina raiva em cultivo celular vero,2
+159,SABOLA,Vacina raiva em cultivo celular vero,115
+163,SABOLA,Vacina raiva em cultivo celular vero,4
+165,SABOLA,Vacina raiva em cultivo celular vero,3
+28251,SABOLA,Vacina raiva em cultivo celular vero,48
+2862,SABOLA,Vacina raiva em cultivo celular vero,18130
+29501,SABOLA,Vacina raiva em cultivo celular vero,2
+,SABOLA,Vacina raiva em cultivo celular vero,48031
+152,SABOLA,Vacina raiva embrião de galinha,64
+16763,SABOLA,Vacina raiva embrião de galinha,2
+2862,SABOLA,Vacina raiva embrião de galinha,68
+,SABOLA,Vacina raiva embrião de galinha,3
+152,SABOT,Soro antibotulínico AB (bivalente),3
+149,SABOTR,Soro antibotrópico (pentavalente),1
+152,SABOTR,Soro antibotrópico (pentavalente),787
+159,SABOTR,Soro antibotrópico (pentavalente),1
+,SABOTR,Soro antibotrópico (pentavalente),99
+152,SACROT,Soro anticrotálico,97
+,SACROT,Soro anticrotálico,6
+152,SAD,Soro antidiftérico,1
+152,SAELAP,Soro antielapídico,11
+,SAELAP,Soro antielapídico,1
+152,SAESCOR,Soro antiescorpiônico,349
+,SAESCOR,Soro antiescorpiônico,15
+152,SALONO,Soro antilonômico,6
+,SALOXO,Soro antiloxoscélico (trivalente),2
+152,SAR,Soro antirrábico,1403
+16763,SAR,Soro antirrábico,1
+28211,SAR,Soro antirrábico,1
+2862,SAR,Soro antirrábico,1
+,SAR,Soro antirrábico,177
+165,SARAMPO,Vacina sarampo,2
+,SARAMPO,Vacina sarampo,1
+152,SARC,Soro antiaracnídico,190
+,SARC,Soro antiaracnídico,16
+152,SAT,Soro antitetânico,1365
+159,SAT,Soro antitetânico,1
+2260,SAT,Soro antitetânico,4
+26513,SAT,Soro antitetânico,1
+,SAT,Soro antitetânico,70
+13688,SCR,"Vacina sarampo, caxumba, rubéola",1
+142,SCR,"Vacina sarampo, caxumba, rubéola",18
+149,SCR,"Vacina sarampo, caxumba, rubéola",33515
+150,SCR,"Vacina sarampo, caxumba, rubéola",10
+152,SCR,"Vacina sarampo, caxumba, rubéola",223
+159,SCR,"Vacina sarampo, caxumba, rubéola",20
+162,SCR,"Vacina sarampo, caxumba, rubéola",10
+163,SCR,"Vacina sarampo, caxumba, rubéola",106585
+165,SCR,"Vacina sarampo, caxumba, rubéola",3087
+1659,SCR,"Vacina sarampo, caxumba, rubéola",27
+16763,SCR,"Vacina sarampo, caxumba, rubéola",14
+168,SCR,"Vacina sarampo, caxumba, rubéola",388
+17934,SCR,"Vacina sarampo, caxumba, rubéola",5
+18190,SCR,"Vacina sarampo, caxumba, rubéola",1
+2250,SCR,"Vacina sarampo, caxumba, rubéola",1
+26313,SCR,"Vacina sarampo, caxumba, rubéola",137
+27880,SCR,"Vacina sarampo, caxumba, rubéola",376
+28283,SCR,"Vacina sarampo, caxumba, rubéola",2
+28289,SCR,"Vacina sarampo, caxumba, rubéola",1
+28290,SCR,"Vacina sarampo, caxumba, rubéola",2
+2862,SCR,"Vacina sarampo, caxumba, rubéola",11
+2901,SCR,"Vacina sarampo, caxumba, rubéola",1
+29501,SCR,"Vacina sarampo, caxumba, rubéola",3
+29909,SCR,"Vacina sarampo, caxumba, rubéola",141
+42489,SCR,"Vacina sarampo, caxumba, rubéola",8
+42931,SCR,"Vacina sarampo, caxumba, rubéola",4
+42932,SCR,"Vacina sarampo, caxumba, rubéola",605
+43175,SCR,"Vacina sarampo, caxumba, rubéola",2
+43202,SCR,"Vacina sarampo, caxumba, rubéola",1
+44618,SCR,"Vacina sarampo, caxumba, rubéola",1
+,SCR,"Vacina sarampo, caxumba, rubéola",317415
+149,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",76657
+150,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",11
+152,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",243
+159,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",14461
+160,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",57
+162,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",10
+163,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",91
+165,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",8513
+166,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",7
+16763,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",82
+168,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",15
+17934,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",44
+2263,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+25538,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+26313,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",572
+2769,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+27880,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",3443
+28289,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",8684
+28303,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",2
+2862,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",12
+29501,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+29909,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",689
+35979,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+36271,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",5
+39263,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+42490,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+42507,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+42655,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",11
+42931,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",6
+42932,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1075
+43175,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",5
+43499,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",3
+44618,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",1
+,SCRV,"Vacina sarampo, caxumba, rubéola e varicela",203137
+149,SR,"Vacina sarampo, rubéola",2
+162,SR,"Vacina sarampo, rubéola",1
+163,SR,"Vacina sarampo, rubéola",2
+165,SR,"Vacina sarampo, rubéola",5
+16763,SR,"Vacina sarampo, rubéola",1
+,SR,"Vacina sarampo, rubéola",30
+149,TETRA,Vacina DTP/Hib,12
+163,TETRA,Vacina DTP/Hib,1
+165,TETRA,Vacina DTP/Hib,61
+27880,TETRA,Vacina DTP/Hib,8
+28303,TETRA,Vacina DTP/Hib,1
+,TETRA,Vacina DTP/Hib,100
+142,TETRA ACELULAR,Vacina DTPa/VIP,19
+149,TETRA ACELULAR,Vacina DTPa/VIP,1
+152,TETRA ACELULAR,Vacina DTPa/VIP,1
+159,TETRA ACELULAR,Vacina DTPa/VIP,747
+165,TETRA ACELULAR,Vacina DTPa/VIP,66
+26313,TETRA ACELULAR,Vacina DTPa/VIP,27
+27880,TETRA ACELULAR,Vacina DTPa/VIP,4273
+28251,TETRA ACELULAR,Vacina DTPa/VIP,40
+28289,TETRA ACELULAR,Vacina DTPa/VIP,137
+2862,TETRA ACELULAR,Vacina DTPa/VIP,1179
+43175,TETRA ACELULAR,Vacina DTPa/VIP,3
+43202,TETRA ACELULAR,Vacina DTPa/VIP,4
+,TETRA ACELULAR,Vacina DTPa/VIP,41
+27880,TT,Vacina toxóide tetânico,319
+12551,VAR,Vacina varicela,51
+12572,VAR,Vacina varicela,4
+13219,VAR,Vacina varicela,8
+142,VAR,Vacina varicela,60
+149,VAR,Vacina varicela,1083
+150,VAR,Vacina varicela,2
+152,VAR,Vacina varicela,80
+159,VAR,Vacina varicela,1427
+160,VAR,Vacina varicela,3170
+163,VAR,Vacina varicela,23
+164,VAR,Vacina varicela,25
+165,VAR,Vacina varicela,8287
+167,VAR,Vacina varicela,3
+16763,VAR,Vacina varicela,5500
+168,VAR,Vacina varicela,2
+17934,VAR,Vacina varicela,38
+18190,VAR,Vacina varicela,1
+2250,VAR,Vacina varicela,2
+2260,VAR,Vacina varicela,1
+22942,VAR,Vacina varicela,18
+2355,VAR,Vacina varicela,2
+26313,VAR,Vacina varicela,1605
+27880,VAR,Vacina varicela,2152
+28251,VAR,Vacina varicela,8
+28289,VAR,Vacina varicela,77
+28290,VAR,Vacina varicela,4
+28303,VAR,Vacina varicela,1
+2862,VAR,Vacina varicela,2
+28738,VAR,Vacina varicela,1
+2901,VAR,Vacina varicela,170
+29501,VAR,Vacina varicela,2
+35978,VAR,Vacina varicela,2
+36271,VAR,Vacina varicela,3
+39262,VAR,Vacina varicela,9
+42488,VAR,Vacina varicela,5
+42490,VAR,Vacina varicela,53
+42655,VAR,Vacina varicela,7424
+42931,VAR,Vacina varicela,85
+42932,VAR,Vacina varicela,489
+43175,VAR,Vacina varicela,189
+43202,VAR,Vacina varicela,2
+43499,VAR,Vacina varicela,6630
+45686,VAR,Vacina varicela,2
+,VAR,Vacina varicela,96629
+149,VERO,Vacina raiva em cultivo celular vero,8
+150,VERO,Vacina raiva em cultivo celular vero,2
+151,VERO,Vacina raiva em cultivo celular vero,1
+152,VERO,Vacina raiva em cultivo celular vero,7118
+153,VERO,Vacina raiva em cultivo celular vero,1
+159,VERO,Vacina raiva em cultivo celular vero,4
+161,VERO,Vacina raiva em cultivo celular vero,7
+163,VERO,Vacina raiva em cultivo celular vero,66
+165,VERO,Vacina raiva em cultivo celular vero,2
+1659,VERO,Vacina raiva em cultivo celular vero,1
+16763,VERO,Vacina raiva em cultivo celular vero,7
+18190,VERO,Vacina raiva em cultivo celular vero,1
+2260,VERO,Vacina raiva em cultivo celular vero,1
+27880,VERO,Vacina raiva em cultivo celular vero,1
+28251,VERO,Vacina raiva em cultivo celular vero,85
+2862,VERO,Vacina raiva em cultivo celular vero,4741
+29501,VERO,Vacina raiva em cultivo celular vero,3491
+,VERO,Vacina raiva em cultivo celular vero,7378
+163,VFA,Vacina DTP,3
+,VFA,Vacina DTP,2
+152,VFA,Vacina HPV quadrivalente,5
+165,VFA,Vacina HPV quadrivalente,1
+,VFA,Vacina HPV quadrivalente,4
+28289,VFA,Vacina dTpa adulto,1
+,VFA,Vacina dTpa adulto,2
+39263,VFA,Vacina dengue (atenuada),2
+,VFA,Vacina dengue (atenuada),7
+163,VFA,Vacina difteria e tétano adulto,3
+16763,VFA,Vacina difteria e tétano adulto,1
+,VFA,Vacina difteria e tétano adulto,12
+142,VFA,Vacina febre amarela,41
+149,VFA,Vacina febre amarela,758773
+150,VFA,Vacina febre amarela,40
+151,VFA,Vacina febre amarela,1
+152,VFA,Vacina febre amarela,349
+159,VFA,Vacina febre amarela,28
+161,VFA,Vacina febre amarela,61
+163,VFA,Vacina febre amarela,69
+165,VFA,Vacina febre amarela,37
+1659,VFA,Vacina febre amarela,15
+166,VFA,Vacina febre amarela,3
+16763,VFA,Vacina febre amarela,44
+168,VFA,Vacina febre amarela,5
+169,VFA,Vacina febre amarela,1
+17934,VFA,Vacina febre amarela,24
+2260,VFA,Vacina febre amarela,1
+22942,VFA,Vacina febre amarela,24
+26313,VFA,Vacina febre amarela,1
+27880,VFA,Vacina febre amarela,141
+28251,VFA,Vacina febre amarela,1472
+28289,VFA,Vacina febre amarela,7
+2862,VFA,Vacina febre amarela,10843
+29909,VFA,Vacina febre amarela,17
+30357,VFA,Vacina febre amarela,1
+33713,VFA,Vacina febre amarela,1
+39262,VFA,Vacina febre amarela,1
+39263,VFA,Vacina febre amarela,1
+42490,VFA,Vacina febre amarela,5
+42507,VFA,Vacina febre amarela,5
+42655,VFA,Vacina febre amarela,2
+42932,VFA,Vacina febre amarela,3
+608,VFA,Vacina febre amarela,2
+9406,VFA,Vacina febre amarela,10
+,VFA,Vacina febre amarela,31447
+152,VFA,Vacina hepatite A infantil,1
+,VFA,Vacina hepatite B,3
+152,VFA,Vacina influenza trivalente,1
+,VFA,Vacina influenza trivalente,98
+27880,VFA,Vacina meningo ACWY,3
+28289,VFA,Vacina meningo ACWY,3
+,VFA,Vacina meningo ACWY,6
+,VFA,Vacina meningo C,1
+,VFA,Vacina penta (DTP/HepB/Hib),2
+142,VFA,Vacina pneumo 13,1
+149,VFA,Vacina polio injetável,2
+,VFA,Vacina polio injetável,2
+152,VFA,Vacina raiva em cultivo celular vero,8
+149,VFA,Vacina rotavírus,1
+163,VFA,"Vacina sarampo, caxumba, rubéola",1
+149,VFA,"Vacina sarampo, caxumba, rubéola e varicela",1
+27880,VFA,"Vacina sarampo, caxumba, rubéola e varicela",4
+28289,VFA,"Vacina sarampo, caxumba, rubéola e varicela",1
+,VFA,"Vacina sarampo, caxumba, rubéola e varicela",3
+165,VFA,Vacina varicela,1
+,VFA,Vacina varicela,1
+2862,VFA-F,Vacina febre amarela fracionada,37
+,VFA-F,Vacina febre amarela fracionada,36
+142,VHZ,Vacina herpes-zóster,1
+159,VHZ,Vacina herpes-zóster,218
+165,VHZ,Vacina herpes-zóster,9
+27880,VHZ,Vacina herpes-zóster,4447
+28289,VHZ,Vacina herpes-zóster,53
+43175,VHZ,Vacina herpes-zóster,1
+43202,VHZ,Vacina herpes-zóster,1
+,VHZ,Vacina herpes-zóster,35
+142,VIP,Vacina polio injetável,2
+149,VIP,Vacina polio injetável,378573
+150,VIP,Vacina polio injetável,41
+152,VIP,Vacina polio injetável,1356
+159,VIP,Vacina polio injetável,60
+160,VIP,Vacina polio injetável,1
+161,VIP,Vacina polio injetável,1
+163,VIP,Vacina polio injetável,889
+164,VIP,Vacina polio injetável,1
+165,VIP,Vacina polio injetável,17
+1659,VIP,Vacina polio injetável,20
+166,VIP,Vacina polio injetável,8
+16763,VIP,Vacina polio injetável,142
+168,VIP,Vacina polio injetável,1
+17934,VIP,Vacina polio injetável,11
+2260,VIP,Vacina polio injetável,1
+2560,VIP,Vacina polio injetável,6
+27880,VIP,Vacina polio injetável,414
+28251,VIP,Vacina polio injetável,7
+28289,VIP,Vacina polio injetável,14
+28303,VIP,Vacina polio injetável,14
+2862,VIP,Vacina polio injetável,9909
+29501,VIP,Vacina polio injetável,2
+29909,VIP,Vacina polio injetável,858
+3521,VIP,Vacina polio injetável,2
+36271,VIP,Vacina polio injetável,1
+42490,VIP,Vacina polio injetável,1
+42507,VIP,Vacina polio injetável,2
+42655,VIP,Vacina polio injetável,1
+43175,VIP,Vacina polio injetável,1
+44618,VIP,Vacina polio injetável,3
+608,VIP,Vacina polio injetável,3
+,VIP,Vacina polio injetável,769987
+149,VOP,Vacina polio oral,163
+152,VOP,Vacina polio oral,12
+160,VOP,Vacina polio oral,2
+163,VOP,Vacina polio oral,29
+27880,VOP,Vacina polio oral,1
+,VOP,Vacina polio oral,1331
+142,VPC10,Vacina pneumo 10,291
+149,VPC10,Vacina pneumo 10,180950
+150,VPC10,Vacina pneumo 10,90
+151,VPC10,Vacina pneumo 10,3
+152,VPC10,Vacina pneumo 10,570
+159,VPC10,Vacina pneumo 10,1924
+160,VPC10,Vacina pneumo 10,74
+161,VPC10,Vacina pneumo 10,1
+163,VPC10,Vacina pneumo 10,58
+165,VPC10,Vacina pneumo 10,17
+16763,VPC10,Vacina pneumo 10,32
+168,VPC10,Vacina pneumo 10,1
+17934,VPC10,Vacina pneumo 10,14
+18190,VPC10,Vacina pneumo 10,524
+2263,VPC10,Vacina pneumo 10,2
+239,VPC10,Vacina pneumo 10,1
+27880,VPC10,Vacina pneumo 10,1039
+28289,VPC10,Vacina pneumo 10,18
+28290,VPC10,Vacina pneumo 10,13
+28303,VPC10,Vacina pneumo 10,4
+2862,VPC10,Vacina pneumo 10,3
+29501,VPC10,Vacina pneumo 10,1
+29909,VPC10,Vacina pneumo 10,726
+30587,VPC10,Vacina pneumo 10,1
+33713,VPC10,Vacina pneumo 10,1
+42430,VPC10,Vacina pneumo 10,2
+42507,VPC10,Vacina pneumo 10,2
+42932,VPC10,Vacina pneumo 10,25
+43175,VPC10,Vacina pneumo 10,3
+43202,VPC10,Vacina pneumo 10,26
+608,VPC10,Vacina pneumo 10,2
+,VPC10,Vacina pneumo 10,447064
+142,VPC13,Vacina pneumo 13,12752
+149,VPC13,Vacina pneumo 13,22
+152,VPC13,Vacina pneumo 13,20
+159,VPC13,Vacina pneumo 13,1
+165,VPC13,Vacina pneumo 13,75
+16763,VPC13,Vacina pneumo 13,1
+1913,VPC13,Vacina pneumo 13,12
+2263,VPC13,Vacina pneumo 13,1299
+25538,VPC13,Vacina pneumo 13,2
+2560,VPC13,Vacina pneumo 13,1
+26313,VPC13,Vacina pneumo 13,16
+27880,VPC13,Vacina pneumo 13,2
+28289,VPC13,Vacina pneumo 13,1
+28290,VPC13,Vacina pneumo 13,2393
+2862,VPC13,Vacina pneumo 13,4
+33713,VPC13,Vacina pneumo 13,1
+42932,VPC13,Vacina pneumo 13,4
+45086,VPC13,Vacina pneumo 13,5
+,VPC13,Vacina pneumo 13,4221
+142,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",259
+159,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",79
+163,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",1
+165,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",18703
+25538,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",8
+26313,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",4029
+26513,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",1
+27880,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",51
+27883,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",3
+28251,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",10
+28289,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",1
+28290,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",229
+2862,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",6
+39263,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",33
+42931,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",116
+42932,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",7508
+43175,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",2
+,VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",980
+142,VPC20,Vacina Pneumo 20,42036
+149,VPC20,Vacina Pneumo 20,2
+152,VPC20,Vacina Pneumo 20,1
+159,VPC20,Vacina Pneumo 20,1
+165,VPC20,Vacina Pneumo 20,43
+2263,VPC20,Vacina Pneumo 20,374
+25538,VPC20,Vacina Pneumo 20,26
+26313,VPC20,Vacina Pneumo 20,2
+27880,VPC20,Vacina Pneumo 20,29
+28251,VPC20,Vacina Pneumo 20,11
+28289,VPC20,Vacina Pneumo 20,34
+28290,VPC20,Vacina Pneumo 20,1699
+2862,VPC20,Vacina Pneumo 20,343
+36271,VPC20,Vacina Pneumo 20,3
+42931,VPC20,Vacina Pneumo 20,1
+42932,VPC20,Vacina Pneumo 20,7
+45086,VPC20,Vacina Pneumo 20,21
+,VPC20,Vacina Pneumo 20,943
+142,VPP23,Vacina pneumo 23,16
+149,VPP23,Vacina pneumo 23,17
+150,VPP23,Vacina pneumo 23,3
+152,VPP23,Vacina pneumo 23,26
+159,VPP23,Vacina pneumo 23,7
+163,VPP23,Vacina pneumo 23,4
+165,VPP23,Vacina pneumo 23,23514
+1659,VPP23,Vacina pneumo 23,2
+16763,VPP23,Vacina pneumo 23,1
+168,VPP23,Vacina pneumo 23,2
+17934,VPP23,Vacina pneumo 23,2
+2263,VPP23,Vacina pneumo 23,5
+25538,VPP23,Vacina pneumo 23,191
+26313,VPP23,Vacina pneumo 23,1720
+26513,VPP23,Vacina pneumo 23,1
+27880,VPP23,Vacina pneumo 23,5
+27883,VPP23,Vacina pneumo 23,19
+28251,VPP23,Vacina pneumo 23,7
+28290,VPP23,Vacina pneumo 23,6
+2862,VPP23,Vacina pneumo 23,55
+35978,VPP23,Vacina pneumo 23,1
+39262,VPP23,Vacina pneumo 23,1
+42931,VPP23,Vacina pneumo 23,222
+42932,VPP23,Vacina pneumo 23,4952
+43202,VPP23,Vacina pneumo 23,1
+712,VPP23,Vacina pneumo 23,25
+,VPP23,Vacina pneumo 23,13221
+11347,VR,Vacina raiva embrião de galinha,1
+152,VR,Vacina raiva embrião de galinha,69
+163,VR,Vacina raiva embrião de galinha,1
+2862,VR,Vacina raiva embrião de galinha,64
+,VR,Vacina raiva embrião de galinha,7
+33502,VVBN,Vacina Varíola Bavarian Nordic,27
+,VVBN,Vacina Varíola Bavarian Nordic,28
+142,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),5383
+159,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),6
+165,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),1
+2263,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),36
+26313,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),7
+27880,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),172
+28251,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),2
+28289,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),4
+28290,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),3985
+36271,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),1
+39263,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),123
+45086,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),5
+,VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),9
+142,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",83
+159,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",41
+27880,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",345
+28289,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",46
+2862,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",1
+43202,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",1
+,VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",5
+142,VVSR-RECADJ,"VsR (re combinante, adjuvada)",273
+159,VVSR-RECADJ,"VsR (re combinante, adjuvada)",89
+27880,VVSR-RECADJ,"VsR (re combinante, adjuvada)",2412
+28251,VVSR-RECADJ,"VsR (re combinante, adjuvada)",1
+28289,VVSR-RECADJ,"VsR (re combinante, adjuvada)",1187
+28290,VVSR-RECADJ,"VsR (re combinante, adjuvada)",14
+33713,VVSR-RECADJ,"VsR (re combinante, adjuvada)",2
+43175,VVSR-RECADJ,"VsR (re combinante, adjuvada)",2
+,VVSR-RECADJ,"VsR (re combinante, adjuvada)",614
+12551,VZR,"Vacina Herpes-Zoster, recombinante",1
+142,VZR,"Vacina Herpes-Zoster, recombinante",37
+159,VZR,"Vacina Herpes-Zoster, recombinante",2183
+160,VZR,"Vacina Herpes-Zoster, recombinante",1
+165,VZR,"Vacina Herpes-Zoster, recombinante",120
+26313,VZR,"Vacina Herpes-Zoster, recombinante",6
+26513,VZR,"Vacina Herpes-Zoster, recombinante",1
+27880,VZR,"Vacina Herpes-Zoster, recombinante",18436
+28289,VZR,"Vacina Herpes-Zoster, recombinante",11271
+36271,VZR,"Vacina Herpes-Zoster, recombinante",1
+39263,VZR,"Vacina Herpes-Zoster, recombinante",2
+42932,VZR,"Vacina Herpes-Zoster, recombinante",3
+43175,VZR,"Vacina Herpes-Zoster, recombinante",48
+43202,VZR,"Vacina Herpes-Zoster, recombinante",55
+45686,VZR,"Vacina Herpes-Zoster, recombinante",4
+,VZR,"Vacina Herpes-Zoster, recombinante",65

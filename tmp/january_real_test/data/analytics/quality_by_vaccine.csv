@@ -1,0 +1,148 @@
+sg_vacina,descricao_vacina,total_registros,registros_completos,idades_validas,documentos_validos,pct_completude,pct_idade_valida,pct_documento_valido
+VIP,Vacina polio injetável,1162349,383722,1162349,1162349,33.01,100.0,100.0
+DT,Vacina difteria e tétano adulto,951080,359478,951080,951080,37.8,100.0,100.0
+HEPB,Vacina hepatite B,904020,393119,904020,904020,43.49,100.0,100.0
+VFA,Vacina febre amarela,803475,759104,803475,803475,94.48,100.0,100.0
+PENTA,Vacina penta (DTP/HepB/Hib),683499,156566,683499,683499,22.91,100.0,100.0
+VPC10,Vacina pneumo 10,633482,182286,633482,633482,28.78,100.0,100.0
+MENACWY,Vacina meningo ACWY,535960,220379,535960,535960,41.12,100.0,100.0
+MENC,Vacina meningo C,478002,152976,478002,478002,32.0,100.0,100.0
+DNG,Vacina dengue (atenuada),473068,189804,473068,473068,40.12,100.0,100.0
+SCR,"Vacina sarampo, caxumba, rubéola",462615,142774,462615,462615,30.86,100.0,100.0
+DTP,Vacina DTP,460203,114985,460203,460203,24.99,100.0,100.0
+ROTA,Vacina rotavírus,419447,120656,419447,419447,28.77,100.0,100.0
+COVID-19 SERUM/ZALIKA,"Vc Covid-19-re combinante, Serum/Zalika",374784,296581,374784,374784,79.13,100.0,100.0
+HPV4,Vacina HPV quadrivalente,328244,135829,328244,328244,41.38,100.0,100.0
+SCRV,"Vacina sarampo, caxumba, rubéola e varicela",317844,111610,317844,317844,35.11,100.0,100.0
+DTPA,Vacina dTpa adulto,254386,109128,254386,254386,42.9,100.0,100.0
+HEPAINF,Vacina hepatite A infantil,253392,98775,253392,253392,38.98,100.0,100.0
+BCG,Vacina BCG,224164,112073,224164,224164,50.0,100.0,100.0
+VAR,Vacina varicela,135331,37773,135331,135331,27.91,100.0,100.0
+COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA MENOR DE 5 ANOS, RNAm",117405,113063,117405,117405,96.3,100.0,100.0
+INF3,Vacina influenza trivalente,96222,65321,96222,96222,67.89,100.0,100.0
+SABOLA,Vacina raiva em cultivo celular vero,80467,32213,80467,80467,40.03,100.0,100.0
+MENB,Vacina meningo B,56116,53470,56116,56116,95.28,100.0,100.0
+VPC20,Vacina Pneumo 20,45576,43287,45576,45576,94.98,100.0,100.0
+VPP23,Vacina pneumo 23,44026,30593,44026,44026,69.49,100.0,100.0
+HEXA,Vacina hexa (DTPa/HepB/VIP/Hib),40523,34769,40523,40523,85.8,100.0,100.0
+VZR,"Vacina Herpes-Zoster, recombinante",32234,31979,32234,32234,99.21,100.0,100.0
+VPC15,"Vacina adsorvida pneumocócica 15-valente (conjugada, polissacarídica)",32019,30135,32019,32019,94.12,100.0,100.0
+COVID-19 MODERNA - SPIKEVAX,"Vacina COVID-19-RNAm, Moderna (Spikevax)",30521,29215,30521,30521,95.72,100.0,100.0
+ROTA5,Vacina rotavírus pentavalente,28089,26759,28089,28089,95.27,100.0,100.0
+HPV9,Vacina HPV nonavalente,25461,25171,25461,25461,98.86,100.0,100.0
+VERO,Vacina raiva em cultivo celular vero,22915,15385,22915,22915,67.14,100.0,100.0
+VPC13,Vacina pneumo 13,20832,16306,20832,20832,78.27,100.0,100.0
+HIB,Vacina Hib,16271,12851,16271,16271,78.98,100.0,100.0
+COVID-19 SERUM/ZALIKA,"Vacina Covid-19-recombinante, Serum/Zalika",13926,12829,13926,13926,92.12,100.0,100.0
+PENTA ACELULAR,Vacina penta acelular (DTPa/VIP/Hib),12584,11534,12584,12584,91.66,100.0,100.0
+VVSR-REC,Vacina Vírus Sincicial Respiratório A e B (recombinante),9734,9651,9734,9734,99.15,100.0,100.0
+DENGUE,Vacina dengue,9028,5302,9028,9028,58.73,100.0,100.0
+HEPAAD,Vacina hepatite A adulto,8732,6696,8732,8732,76.68,100.0,100.0
+TETRA ACELULAR,Vacina DTPa/VIP,6538,6257,6538,6538,95.7,100.0,100.0
+IGHR,Imunoglobulina humana antirrábica,5671,2799,5671,5671,49.36,100.0,100.0
+SABOCR,Vacina raiva em cultivo celular vero,5051,1573,5051,5051,31.14,100.0,100.0
+VHZ,Vacina herpes-zóster,4765,4698,4765,4765,98.59,100.0,100.0
+VVSR-RECADJ,"VsR (re combinante, adjuvada)",4594,3955,4594,4594,86.09,100.0,100.0
+INF4,Vacina influenza tetravalente,3991,3664,3991,3991,91.81,100.0,100.0
+DTPA,Vacina DTPa infantil,3153,2182,3153,3153,69.2,100.0,100.0
+HA,Vacina hepatite A,2869,2392,2869,2869,83.37,100.0,100.0
+HAEHB,Vacina hepatite AeB (uso adulto),1847,1786,1847,1847,96.7,100.0,100.0
+H1N1,Vacina Influenza H1N1,1600,193,1600,1600,12.06,100.0,100.0
+SAR,Soro antirrábico,1583,1397,1583,1583,88.25,100.0,100.0
+VOP,Vacina polio oral,1538,204,1538,1538,13.26,100.0,100.0
+SAT,Soro antitetânico,1441,1361,1441,1441,94.45,100.0,100.0
+MENINGO AC,Vacina raiva em cultivo celular vero,1265,803,1265,1265,63.48,100.0,100.0
+DTPA/VIP,Vacina Tetra Acelular dTpa/VIP,1148,1075,1148,1148,93.64,100.0,100.0
+COVID-19 PFIZER - COMIRNATY PEDIÁTRICA,"Vacina COVID-19 PFIZER - COMIRNATY PEDIÁTRICA, RNAm",1115,435,1115,1115,39.01,100.0,100.0
+SABOTR,Soro antibotrópico (pentavalente),888,780,888,888,87.84,100.0,100.0
+DT,Vacina difteria e tétano infantil,643,55,643,643,8.55,100.0,100.0
+COVID-19 PFIZER - COMIRNATY,"Vacina COVID-19 PFIZER - COMIRNATY, RNAm",575,480,575,575,83.48,100.0,100.0
+IGHT,Imunoglobulina humana antitétano,564,493,564,564,87.41,100.0,100.0
+FTP,Vacina febre tifóide,555,472,555,555,85.05,100.0,100.0
+VVSR-RECADJ,"Vacina Vírus Sincicial Respiratório (recombinante, adjuvada)",522,516,522,522,98.85,100.0,100.0
+IGHHB,Imunoglobulina humana anti-hepatite B,453,354,453,453,78.15,100.0,100.0
+SAESCOR,Soro antiescorpiônico,364,348,364,364,95.6,100.0,100.0
+TT,Vacina toxóide tetânico,319,318,319,319,99.69,100.0,100.0
+QUADRUPLA VIRAL,Vacina quádrupla viral,243,232,243,243,95.47,100.0,100.0
+HAEHBPED,Hepatite AeB (pediátrica),224,212,224,224,94.64,100.0,100.0
+GRIPE SAZONAL,Vacina gripe,213,115,213,213,53.99,100.0,100.0
+SARC,Soro antiaracnídico,206,186,206,206,90.29,100.0,100.0
+MEN BC,Vacina meningocócica B/C,197,182,197,197,92.39,100.0,100.0
+TETRA,Vacina DTP/Hib,183,83,183,183,45.36,100.0,100.0
+VR,Vacina raiva embrião de galinha,142,133,142,142,93.66,100.0,100.0
+FTA,Vacina febre tifóide (atenuada),141,127,141,141,90.07,100.0,100.0
+SABOLA,Vacina raiva embrião de galinha,137,133,137,137,97.08,100.0,100.0
+COVID-19 PFIZER - COMIRNATY BIVALENTE,"Vacina COVID-19 PFIZER - COMIRNATY BIVALENTE, RNAm",137,65,137,137,47.45,100.0,100.0
+SACROT,Soro anticrotálico,103,94,103,103,91.26,100.0,100.0
+VFA,Vacina influenza trivalente,99,1,99,99,1.01,100.0,100.0
+HPV2,Vacina HPV bivalente,79,18,79,79,22.78,100.0,100.0
+VFA-F,Vacina febre amarela fracionada,73,34,73,73,46.58,100.0,100.0
+COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD,"Vacina COVID-19 ASTRAZENECA/FIOCRUZ - COVISHIELD, recombinante",63,6,63,63,9.52,100.0,100.0
+FLU ID,Vacina influenza ID,61,10,61,61,16.39,100.0,100.0
+VVBN,Vacina Varíola Bavarian Nordic,55,27,55,55,49.09,100.0,100.0
+SR,"Vacina sarampo, rubéola",41,11,41,41,26.83,100.0,100.0
+SABOLA,Soro antibotrópico (pentavalente) e antilaquético,41,31,41,41,75.61,100.0,100.0
+HPV BI,Vacina HPV bivalente,40,38,40,40,95.0,100.0,100.0
+SABOCR,Soro antibotrópico (pentavalente) e anticrotálico,35,22,35,35,62.86,100.0,100.0
+IGHV,Imunoglobulina humana antivaricela,34,28,34,34,82.35,100.0,100.0
+INF4-ALTA DOSAGEM,Vacina Influenza Tetravalente - Alta Dosagem,32,7,32,32,21.88,100.0,100.0
+SABOCR,Vacina raiva embrião de galinha,25,25,25,25,100.0,100.0,100.0
+COVID-19 MODERNA - SPIKEVAX BIVALENTE,"Vacina COVID-19-RNAm, Moderna (Spikevax) bivalente",25,0,25,25,0.0,100.0,100.0
+DILSRC,"Diluente para vacina sarampo, caxumba, rubéola",21,21,21,21,100.0,100.0,100.0
+COVID-19 SINOVAC/BUTANTAN - CORONAVAC,"Vacina COVID-19 SINOVAC/BUTANTAN - CORONAVAC, inativada",20,8,20,20,40.0,100.0,100.0
+SABOCR,"Vacina Herpes-Zoster, recombinante",19,18,19,19,94.74,100.0,100.0
+VFA,Vacina difteria e tétano adulto,16,4,16,16,25.0,100.0,100.0
+COVID-19 ASTRAZENECA - CHADOX1-S,"Vacina COVID-19 ASTRAZENECA - ChAdOx1-S, recombinante",13,4,13,13,30.77,100.0,100.0
+SAELAP,Soro antielapídico,12,11,12,12,91.67,100.0,100.0
+VFA,Vacina meningo ACWY,12,6,12,12,50.0,100.0,100.0
+VFA,Vacina HPV quadrivalente,10,6,10,10,60.0,100.0,100.0
+VFA,Vacina dengue (atenuada),9,2,9,9,22.22,100.0,100.0
+VFA,"Vacina sarampo, caxumba, rubéola e varicela",9,6,9,9,66.67,100.0,100.0
+VFA,Vacina raiva em cultivo celular vero,8,8,8,8,100.0,100.0,100.0
+COVID-19 SINOVAC - CORONAVAC,Vacina COVID-19 SINOVAC - CORONAVAC inativada,7,5,7,7,71.43,100.0,100.0
+SABOCR,Vacina dTpa adulto,6,6,6,6,100.0,100.0,100.0
+SABOCR,Vacina febre amarela,6,6,6,6,100.0,100.0,100.0
+SALONO,Soro antilonômico,6,6,6,6,100.0,100.0,100.0
+SABOCR,"VsR (re combinante, adjuvada)",6,6,6,6,100.0,100.0,100.0
+VFA,Vacina DTP,5,3,5,5,60.0,100.0,100.0
+COVID-19 JANSSEN - AD26.COV2.S,"Vacina COVID-19 JANSSEN - Ad26.COV2.S, recombinante",5,5,5,5,100.0,100.0,100.0
+DILVAR,Diluente para vacina varicela,5,5,5,5,100.0,100.0,100.0
+COVID-19 BHARAT - COVAXIN,Vacina COVID-19 BHARAT - COVAXIN inativada,4,0,4,4,0.0,100.0,100.0
+SABOCR,Vacina dengue (atenuada),4,4,4,4,100.0,100.0,100.0
+MENINGO AC,Vacina meningocócica AC,4,0,4,4,0.0,100.0,100.0
+SABOLA,Vacina HPV nonavalente,4,4,4,4,100.0,100.0,100.0
+VFA,Vacina polio injetável,4,2,4,4,50.0,100.0,100.0
+VFA,Vacina hepatite B,3,0,3,3,0.0,100.0,100.0
+SABOCR,Vacina pneumo 23,3,3,3,3,100.0,100.0,100.0
+SABOT,Soro antibotulínico AB (bivalente),3,3,3,3,100.0,100.0,100.0
+SABOLA,Vacina dengue (atenuada),3,3,3,3,100.0,100.0,100.0
+DILMENC,Diluente para vacina meningo C,3,0,3,3,0.0,100.0,100.0
+VFA,Vacina dTpa adulto,3,1,3,3,33.33,100.0,100.0
+SARAMPO,Vacina sarampo,3,2,3,3,66.67,100.0,100.0
+SALOXO,Soro antiloxoscélico (trivalente),2,0,2,2,0.0,100.0,100.0
+SABOLA,"Vacina Herpes-Zoster, recombinante",2,2,2,2,100.0,100.0,100.0
+COVID-19 GAMALEYA - SPUTNIK V,Vacina COVID-19 GAMALEYA - SPUTNIK V recombinante,2,0,2,2,0.0,100.0,100.0
+SABOCR,Vacina HPV quadrivalente,2,2,2,2,100.0,100.0,100.0
+SABOCR,Vacina Tetra Acelular dTpa/VIP,2,2,2,2,100.0,100.0,100.0
+DILVR,Diluente para vacina raiva cultivo embrião de galinha,2,2,2,2,100.0,100.0,100.0
+VFA,Vacina varicela,2,1,2,2,50.0,100.0,100.0
+VFA,Vacina penta (DTP/HepB/Hib),2,0,2,2,0.0,100.0,100.0
+PNCC7V,Vacina pneumocócica 7V,1,0,1,1,0.0,100.0,100.0
+SABOCR,Vacina pneumo 13,1,1,1,1,100.0,100.0,100.0
+MENINGO AC,Vacina HPV quadrivalente,1,1,1,1,100.0,100.0,100.0
+VFA,"Vacina sarampo, caxumba, rubéola",1,1,1,1,100.0,100.0,100.0
+SAD,Soro antidiftérico,1,1,1,1,100.0,100.0,100.0
+SABOLA,Vacina pneumo 23,1,1,1,1,100.0,100.0,100.0
+SABOCR,Vacina meningo B,1,1,1,1,100.0,100.0,100.0
+SABOLA,Vacina febre amarela,1,1,1,1,100.0,100.0,100.0
+VFA,Vacina meningo C,1,0,1,1,0.0,100.0,100.0
+MENINGO AC,Vacina meningo C,1,1,1,1,100.0,100.0,100.0
+MENINGO AC,Vacina hepatite B,1,1,1,1,100.0,100.0,100.0
+SABOCR,Vacina hepatite A,1,1,1,1,100.0,100.0,100.0
+SABOCR,Vacina meningo ACWY,1,1,1,1,100.0,100.0,100.0
+VFA,Vacina pneumo 13,1,1,1,1,100.0,100.0,100.0
+VFA,Vacina hepatite A infantil,1,1,1,1,100.0,100.0,100.0
+SABOLA,Vacina pneumo 13,1,1,1,1,100.0,100.0,100.0
+MENINGO AC,Vacina pneumo 23,1,1,1,1,100.0,100.0,100.0
+SABOCR,Vacina Varíola Bavarian Nordic,1,0,1,1,0.0,100.0,100.0
+VFA,Vacina rotavírus,1,1,1,1,100.0,100.0,100.0

@@ -1,0 +1,50 @@
+% Minimal SBC-compatible fallback style for local/Overleaf compilation.
+% Replace this file with the official SBC sbc-template.sty before final submission
+% if the event requires the exact institutional template.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{sbc-template}[2026/06/30 Minimal SBC fallback]
+
+\RequirePackage[a4paper,top=3.0cm,bottom=2.0cm,left=3.0cm,right=2.0cm]{geometry}
+\RequirePackage{times}
+\RequirePackage{setspace}
+\RequirePackage{indentfirst}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+\onehalfspacing
+
+\newcommand{\inst}[1]{\textsuperscript{#1}}
+\newcommand{\email}[1]{\texttt{#1}}
+
+\renewcommand{\maketitle}{%
+  \begin{center}
+    {\Large\bfseries \@title \par}
+    \vspace{0.6cm}
+    {\normalsize \@author \par}
+    \vspace{0.2cm}
+    {\normalsize \@address \par}
+  \end{center}
+  \vspace{0.3cm}
+}
+
+\newcommand{\address}[1]{\gdef\@address{#1}}
+\newcommand{\@address}{}
+
+\newenvironment{resumo}
+  {\begin{center}\bfseries Resumo\end{center}\begin{quote}\small}
+  {\end{quote}}
+
+\renewenvironment{abstract}
+  {\begin{center}\bfseries Abstract\end{center}\begin{quote}\small}
+  {\end{quote}}
+
+\renewcommand{\section}{\@startsection{section}{1}{0pt}%
+  {-1.5ex plus -0.2ex minus -0.2ex}%
+  {0.8ex plus 0.2ex}%
+  {\normalfont\large\bfseries}}
+
+\renewcommand{\subsection}{\@startsection{subsection}{2}{0pt}%
+  {-1.2ex plus -0.2ex minus -0.2ex}%
+  {0.6ex plus 0.2ex}%
+  {\normalfont\normalsize\bfseries}}

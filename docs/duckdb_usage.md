@@ -46,15 +46,28 @@ pip install -r requirements.txt
 python scripts/build_duckdb.py
 ```
 
+Com enriquecimento geografico:
+
+```powershell
+python scripts/build_geography_metadata.py
+python scripts/build_duckdb.py --geography-path data_sources/ibge_municipalities.csv
+```
+
 Isso cria:
 
 - `data/vacinabr_pni.duckdb`
 - `docs/duckdb_catalog.json`
 - tabelas resumo exportadas para `data/analytics/*.csv`
 
+Se `data_sources/ibge_municipalities.csv` existir, tambem cria:
+
+- `municipality_geography`: dimensao municipal com metadados IBGE.
+- `vacinacao_curada_geo`: view que une os registros curados aos metadados municipais.
+
 ## Tabelas criadas
 
 - `dataset_metadata`
+- `municipality_geography` quando o CSV geografico estiver disponivel
 - `monthly_vaccination_summary`
 - `state_vaccination_summary`
 - `region_vaccination_summary`
@@ -62,6 +75,14 @@ Isso cria:
 - `manufacturer_summary`
 - `age_group_summary`
 - `sex_summary`
+- `monthly_vaccine_type_summary`
+- `state_vaccine_type_summary`
+- `municipality_vaccination_summary`
+- `state_municipality_vaccine_summary`
+- `quality_by_month`
+- `quality_by_state`
+- `quality_by_vaccine`
+- `vaccine_dictionary`
 
 ## Exemplo de consulta
 
@@ -69,9 +90,51 @@ Isso cria:
 SELECT
     uf_paciente,
     sg_vacina,
+    descricao_vacina,
     count(*) AS doses_aplicadas
 FROM vacinacao_curada
-GROUP BY uf_paciente, sg_vacina
+GROUP BY uf_paciente, sg_vacina, descricao_vacina
+ORDER BY doses_aplicadas DESC
+LIMIT 20;
+```
+
+Para consultas com metadados municipais, use `vacinacao_curada_geo`:
+
+```sql
+SELECT
+    uf_paciente,
+    nome_municipio_paciente,
+    latitude,
+    longitude,
+    count(*) AS doses_aplicadas
+FROM vacinacao_curada_geo
+GROUP BY uf_paciente, nome_municipio_paciente, latitude, longitude
+ORDER BY doses_aplicadas DESC
+LIMIT 20;
+```
+
+## Qualidade por UF
+
+```sql
+SELECT
+    uf_paciente,
+    total_registros,
+    pct_completude,
+    pct_idade_valida,
+    pct_documento_valido
+FROM quality_by_state
+ORDER BY total_registros DESC;
+```
+
+## Municipios com mais registros
+
+```sql
+SELECT
+    uf_paciente,
+    codigo_municipio_paciente,
+    nome_municipio_paciente,
+    doses_aplicadas
+FROM municipality_vaccination_summary
 ORDER BY doses_aplicadas DESC
 LIMIT 20;
 ```

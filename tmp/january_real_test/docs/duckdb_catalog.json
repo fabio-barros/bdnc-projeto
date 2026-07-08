@@ -1,16 +1,92 @@
 {
   "database": "tmp\\january_real_test\\data\\vacinabr_pni.duckdb",
   "source_parquet_pattern": "tmp\\january_real_test\\data\\processed\\year=*\\month=*\\*.parquet",
-  "view": "vacinacao_curada",
   "tables": [
-    "age_group_summary",
-    "dataset_metadata",
-    "manufacturer_summary",
-    "monthly_vaccination_summary",
-    "region_vaccination_summary",
-    "sex_summary",
-    "state_vaccination_summary",
-    "vaccine_type_summary",
-    "vacinacao_curada"
-  ]
+    {
+      "name": "age_group_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "dataset_metadata",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "manufacturer_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "monthly_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "monthly_vaccine_type_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "municipality_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "quality_by_month",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "quality_by_state",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "quality_by_vaccine",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "region_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "sex_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "state_municipality_vaccine_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "state_vaccination_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "state_vaccine_type_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "vaccine_dictionary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "vaccine_type_summary",
+      "type": "BASE TABLE"
+    },
+    {
+      "name": "vacinacao_curada",
+      "type": "VIEW"
+    }
+  ],
+  "view": "vacinacao_curada",
+  "summary_queries": {
+    "monthly_vaccination_summary": "\n        SELECT\n            ano_vacinacao,\n            mes_vacinacao,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY ano_vacinacao, mes_vacinacao\n        ORDER BY ano_vacinacao, mes_vacinacao\n    ",
+    "state_vaccination_summary": "\n        SELECT\n            uf_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY uf_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "region_vaccination_summary": "\n        SELECT\n            regiao_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY regiao_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "vaccine_type_summary": "\n        SELECT\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY sg_vacina, descricao_vacina\n        ORDER BY doses_aplicadas DESC\n    ",
+    "manufacturer_summary": "\n        SELECT\n            descricao_vacina_fabricante,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY descricao_vacina_fabricante\n        ORDER BY doses_aplicadas DESC\n    ",
+    "age_group_summary": "\n        SELECT\n            faixa_etaria,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY faixa_etaria\n        ORDER BY doses_aplicadas DESC\n    ",
+    "sex_summary": "\n        SELECT\n            sexo_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY sexo_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "monthly_vaccine_type_summary": "\n        SELECT\n            ano_vacinacao,\n            mes_vacinacao,\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY ano_vacinacao, mes_vacinacao, sg_vacina, descricao_vacina\n        ORDER BY ano_vacinacao, mes_vacinacao, doses_aplicadas DESC\n    ",
+    "state_vaccine_type_summary": "\n        SELECT\n            uf_paciente,\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY uf_paciente, sg_vacina, descricao_vacina\n        ORDER BY uf_paciente, doses_aplicadas DESC\n    ",
+    "municipality_vaccination_summary": "\n        SELECT\n            uf_paciente,\n            regiao_paciente,\n            codigo_municipio_paciente,\n            nome_municipio_paciente,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY\n            uf_paciente,\n            regiao_paciente,\n            codigo_municipio_paciente,\n            nome_municipio_paciente\n        ORDER BY doses_aplicadas DESC\n    ",
+    "state_municipality_vaccine_summary": "\n        SELECT\n            uf_paciente,\n            codigo_municipio_paciente,\n            nome_municipio_paciente,\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS doses_aplicadas\n        FROM vacinacao_curada\n        GROUP BY\n            uf_paciente,\n            codigo_municipio_paciente,\n            nome_municipio_paciente,\n            sg_vacina,\n            descricao_vacina\n        ORDER BY uf_paciente, nome_municipio_paciente, doses_aplicadas DESC\n    ",
+    "quality_by_month": "\n        SELECT\n            ano_vacinacao,\n            mes_vacinacao,\n            count(*) AS total_registros,\n            sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) AS registros_completos,\n            sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) AS idades_validas,\n            sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) AS documentos_validos,\n            round(100.0 * sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) / count(*), 2) AS pct_completude,\n            round(100.0 * sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) / count(*), 2) AS pct_idade_valida,\n            round(100.0 * sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) / count(*), 2) AS pct_documento_valido\n        FROM vacinacao_curada\n        GROUP BY ano_vacinacao, mes_vacinacao\n        ORDER BY ano_vacinacao, mes_vacinacao\n    ",
+    "quality_by_state": "\n        SELECT\n            uf_paciente,\n            count(*) AS total_registros,\n            sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) AS registros_completos,\n            sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) AS idades_validas,\n            sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) AS documentos_validos,\n            round(100.0 * sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) / count(*), 2) AS pct_completude,\n            round(100.0 * sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) / count(*), 2) AS pct_idade_valida,\n            round(100.0 * sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) / count(*), 2) AS pct_documento_valido\n        FROM vacinacao_curada\n        GROUP BY uf_paciente\n        ORDER BY total_registros DESC\n    ",
+    "quality_by_vaccine": "\n        SELECT\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS total_registros,\n            sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) AS registros_completos,\n            sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) AS idades_validas,\n            sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) AS documentos_validos,\n            round(100.0 * sum(CASE WHEN registro_completo THEN 1 ELSE 0 END) / count(*), 2) AS pct_completude,\n            round(100.0 * sum(CASE WHEN idade_valida THEN 1 ELSE 0 END) / count(*), 2) AS pct_idade_valida,\n            round(100.0 * sum(CASE WHEN registro_valido_documento THEN 1 ELSE 0 END) / count(*), 2) AS pct_documento_valido\n        FROM vacinacao_curada\n        GROUP BY sg_vacina, descricao_vacina\n        ORDER BY total_registros DESC\n    ",
+    "vaccine_dictionary": "\n        SELECT\n            codigo_vacina,\n            sg_vacina,\n            descricao_vacina,\n            count(*) AS registros_observados\n        FROM vacinacao_curada\n        GROUP BY codigo_vacina, sg_vacina, descricao_vacina\n        ORDER BY sg_vacina, descricao_vacina, codigo_vacina\n    "
+  }
 }

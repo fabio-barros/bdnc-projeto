@@ -107,92 +107,142 @@ def write_source_metadata(
 
 def write_data_dictionary(docs_dir: Path) -> None:
     dictionary = [
-        ("data_vacina", "date", "Data de aplicacao da vacina."),
-        ("ano_vacinacao", "integer", "Ano extraido da data de vacinacao."),
-        ("mes_vacinacao", "integer", "Mes extraido da data de vacinacao."),
-        ("trimestre_vacinacao", "string", "Trimestre da vacinacao."),
+        ("data_vacina", "date", "Data de aplicacao da vacina.", "source", "2025-01-14", False),
+        ("ano_vacinacao", "integer", "Ano extraido da data de vacinacao.", "derived", "2025", False),
+        ("mes_vacinacao", "integer", "Mes extraido da data de vacinacao.", "derived", "1", False),
+        ("trimestre_vacinacao", "string", "Trimestre da vacinacao.", "derived", "Q1", False),
         (
             "semana_epidemiologica",
             "integer",
             "Semana epidemiologica estimada a partir da data de vacinacao.",
+            "derived",
+            "3",
+            False,
         ),
-        ("sexo_paciente", "string", "Sexo informado do paciente."),
-        ("numero_idade_paciente", "number", "Idade informada do paciente."),
-        ("faixa_etaria", "string", "Faixa etaria derivada da idade."),
+        ("sexo_paciente", "string", "Sexo informado do paciente.", "source", "M", False),
+        ("numero_idade_paciente", "number", "Idade informada do paciente.", "source", "59", False),
+        ("faixa_etaria", "string", "Faixa etaria derivada da idade.", "derived", "40-59", False),
         (
             "idade_valida",
             "boolean",
             "Indica se a idade esta no intervalo esperado de 0 a 130 anos.",
+            "derived_quality",
+            "true",
+            False,
         ),
-        ("uf_paciente", "string", "Unidade federativa do paciente."),
+        ("uf_paciente", "string", "Unidade federativa do paciente.", "source", "SP", False),
         (
             "regiao_paciente",
             "string",
             "Regiao geografica derivada da UF do paciente.",
+            "derived",
+            "Sudeste",
+            False,
         ),
-        ("codigo_municipio_paciente", "string", "Codigo do municipio do paciente."),
-        ("nome_municipio_paciente", "string", "Nome do municipio do paciente."),
-        ("uf_estabelecimento", "string", "Unidade federativa do estabelecimento."),
+        ("codigo_municipio_paciente", "string", "Codigo do municipio do paciente.", "source", "355030", False),
+        ("nome_municipio_paciente", "string", "Nome do municipio do paciente.", "source", "SAO PAULO", False),
+        ("uf_estabelecimento", "string", "Unidade federativa do estabelecimento.", "source", "SP", False),
         (
             "razao_social_estabelecimento",
             "string",
             "Razao social do estabelecimento de saude.",
+            "source",
+            "SECRETARIA MUNICIPAL DE SAUDE",
+            False,
         ),
         (
             "nome_fantasia_estabelecimento",
             "string",
             "Nome fantasia do estabelecimento de saude.",
+            "source",
+            "UBS EXEMPLO",
+            False,
         ),
         (
             "regiao_estabelecimento",
             "string",
             "Regiao geografica derivada da UF do estabelecimento.",
+            "derived",
+            "Sudeste",
+            False,
         ),
         (
             "codigo_municipio_estabelecimento",
             "string",
             "Codigo do municipio do estabelecimento.",
+            "source",
+            "355030",
+            False,
         ),
         (
             "municipio_paciente_igual_estabelecimento",
             "boolean",
             "Indica se paciente e estabelecimento pertencem ao mesmo municipio.",
+            "derived",
+            "true",
+            False,
         ),
-        ("codigo_vacina", "string", "Codigo da vacina."),
-        ("sg_vacina", "string", "Sigla da vacina ou imunobiologico."),
-        ("descricao_dose_vacina", "string", "Descricao da dose aplicada."),
-        ("codigo_lote_vacina", "string", "Codigo do lote da vacina."),
+        ("codigo_vacina", "string", "Codigo da vacina.", "source", "26513", False),
+        ("sg_vacina", "string", "Sigla da vacina ou imunobiologico.", "source", "IGHT", False),
+        ("descricao_vacina", "string", "Nome/descricao da vacina ou imunobiologico.", "source", "Imunoglobulina humana antitetano", False),
+        ("descricao_dose_vacina", "string", "Descricao da dose aplicada.", "source", "1A DOSE", False),
+        ("codigo_lote_vacina", "string", "Codigo do lote da vacina.", "source", "P100647543", False),
         (
             "descricao_vacina_fabricante",
             "string",
             "Fabricante informado da vacina.",
+            "source",
+            "CSL BEHRING",
+            False,
         ),
         (
             "descricao_estrategia_vacinacao",
             "string",
             "Estrategia de vacinacao informada.",
+            "source",
+            "Rotina",
+            False,
         ),
-        ("descricao_sistema_origem", "string", "Sistema de origem do registro."),
-        ("st_documento", "string", "Status documental do registro."),
+        ("descricao_sistema_origem", "string", "Sistema de origem do registro.", "source", "Novo PNI", False),
+        ("st_documento", "string", "Status documental do registro.", "source", "FINAL", False),
         (
             "registro_deletado_rnds",
             "boolean",
             "Indica se o registro possui data de delecao na RNDS.",
+            "derived_quality",
+            "false",
+            False,
         ),
-        ("documento_final", "boolean", "Indica se o status do documento e final."),
+        ("documento_final", "boolean", "Indica se o status do documento e final.", "derived_quality", "true", False),
         (
             "registro_valido_documento",
             "boolean",
             "Indica documento final e nao deletado.",
+            "derived_quality",
+            "true",
+            False,
         ),
         (
             "registro_completo",
             "boolean",
             "Indica preenchimento dos campos essenciais.",
+            "derived_quality",
+            "true",
+            False,
         ),
     ]
 
-    df = pd.DataFrame(dictionary, columns=["field", "type", "description"])
+    df = pd.DataFrame(
+        dictionary,
+        columns=[
+            "field",
+            "type",
+            "description",
+            "source_or_derived",
+            "example_value",
+            "sensitive",
+        ],
+    )
 
     df.to_csv(
         docs_dir / "data_dictionary.csv",
@@ -234,15 +284,87 @@ def write_analytics(df: pd.DataFrame, analytics_dir: Path) -> None:
     save(["ano_vacinacao", "mes_vacinacao"], "monthly_vaccination_summary.csv")
     save(["uf_paciente"], "state_vaccination_summary.csv")
     save(["regiao_paciente"], "region_vaccination_summary.csv")
-    save(["sg_vacina"], "vaccine_type_summary.csv")
+    save(["sg_vacina", "descricao_vacina"], "vaccine_type_summary.csv")
     save(["descricao_vacina_fabricante"], "manufacturer_summary.csv")
     save(["faixa_etaria"], "age_group_summary.csv")
     save(["sexo_paciente"], "sex_summary.csv")
     save(
-        ["ano_vacinacao", "mes_vacinacao", "sg_vacina"],
+        ["ano_vacinacao", "mes_vacinacao", "sg_vacina", "descricao_vacina"],
         "monthly_vaccine_type_summary.csv",
     )
     save(
-        ["uf_paciente", "sg_vacina"],
+        ["uf_paciente", "sg_vacina", "descricao_vacina"],
         "state_vaccine_type_summary.csv",
     )
+    save(
+        [
+            "uf_paciente",
+            "regiao_paciente",
+            "codigo_municipio_paciente",
+            "nome_municipio_paciente",
+        ],
+        "municipality_vaccination_summary.csv",
+    )
+    save(
+        [
+            "uf_paciente",
+            "codigo_municipio_paciente",
+            "nome_municipio_paciente",
+            "sg_vacina",
+            "descricao_vacina",
+        ],
+        "state_municipality_vaccine_summary.csv",
+    )
+
+    def save_quality(group_cols: list[str], filename: str) -> None:
+        existing = [col for col in group_cols if col in df.columns]
+        required = [
+            "registro_completo",
+            "idade_valida",
+            "registro_valido_documento",
+        ]
+
+        if len(existing) != len(group_cols) or not set(required).issubset(df.columns):
+            return
+
+        grouped = df.groupby(existing, dropna=False)
+        result = grouped.agg(
+            total_registros=(existing[0], "size"),
+            registros_completos=("registro_completo", "sum"),
+            idades_validas=("idade_valida", "sum"),
+            documentos_validos=("registro_valido_documento", "sum"),
+        ).reset_index()
+
+        result["pct_completude"] = (
+            100 * result["registros_completos"] / result["total_registros"]
+        ).round(2)
+        result["pct_idade_valida"] = (
+            100 * result["idades_validas"] / result["total_registros"]
+        ).round(2)
+        result["pct_documento_valido"] = (
+            100 * result["documentos_validos"] / result["total_registros"]
+        ).round(2)
+
+        result.to_csv(analytics_dir / filename, index=False, encoding="utf-8")
+
+    save_quality(["ano_vacinacao", "mes_vacinacao"], "quality_by_month.csv")
+    save_quality(["uf_paciente"], "quality_by_state.csv")
+    save_quality(["sg_vacina", "descricao_vacina"], "quality_by_vaccine.csv")
+
+    vaccine_columns = [
+        "codigo_vacina",
+        "sg_vacina",
+        "descricao_vacina",
+    ]
+    if set(vaccine_columns).issubset(df.columns):
+        vaccine_dictionary = (
+            df.groupby(vaccine_columns, dropna=False)
+            .size()
+            .reset_index(name="registros_observados")
+            .sort_values(["sg_vacina", "descricao_vacina", "codigo_vacina"])
+        )
+        vaccine_dictionary.to_csv(
+            analytics_dir / "vaccine_dictionary.csv",
+            index=False,
+            encoding="utf-8",
+        )

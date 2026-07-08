@@ -1,4 +1,5 @@
 .venv/
+.venv-1/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -9,3 +10,4 @@ data/analytics/
 docs/schema.json
 docs/data_dictionary.csv
 docs/validation_report.csv
+release/

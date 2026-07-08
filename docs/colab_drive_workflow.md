@@ -41,3 +41,5 @@ Estrutura gerada:
 - A camada bruta contem campos sensiveis; publique preferencialmente apenas
   `data/processed`, `data/analytics` e `docs`.
 - O processamento e feito em chunks para reduzir uso de memoria no Colab.
+- A execucao tambem gera resumos por municipio, dicionario de vacinas e
+  indicadores de qualidade por mes, UF e vacina.

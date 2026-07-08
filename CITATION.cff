@@ -1,16 +1,23 @@
 cff-version: 1.2.0
-message: "If you use this dataset or pipeline, please cite it as below."
-title: "VacinaBR-PNI: Um Dataset Curado e Enriquecido para Analises Epidemiologicas das Doses Aplicadas pelo Programa Nacional de Imunizacoes"
+message: "If you use this dataset, please cite it as below."
+title: "VacinaBR-PNI: um conjunto de dados curado e enriquecido para analises epidemiologicas de doses aplicadas no Programa Nacional de Imunizacoes"
 type: dataset
-year: 2026
+doi: 10.5281/zenodo.21270037
+url: "https://doi.org/10.5281/zenodo.21270037"
+date-released: 2026-07-08
 license: CC-BY-4.0
-repository-code: "https://github.com/SEU-USUARIO/bdnc-projeto"
-abstract: "Dataset curado, padronizado, validado e documentado de doses aplicadas pelo Programa Nacional de Imunizacoes, derivado da API de Dados Abertos do Ministerio da Saude."
+abstract: "Conjunto de dados curado, padronizado, validado e documentado de doses aplicadas pelo Programa Nacional de Imunizacoes, derivado dos dados abertos do Ministerio da Saude."
 keywords:
   - vacinacao
   - PNI
   - saude publica
-  - data paper
   - epidemiologia
+  - dados abertos
+  - DuckDB
+  - Parquet
+  - Brasil
 authors:
-  - name: "Fabio"
+  - family-names: Ribeiro
+    given-names: Fabio
+  - family-names: Leite
+    given-names: Andreza
