@@ -10,13 +10,13 @@ armazena os arquivos no Google Drive e executa a ETL no Google Colab.
 O pacote de dados publicado no Zenodo esta disponivel pelo DOI:
 
 ```text
-10.5281/zenodo.21270037
+10.5281/zenodo.21271031
 ```
 
 Link persistente:
 
 ```text
-https://doi.org/10.5281/zenodo.21270037
+https://doi.org/10.5281/zenodo.21271031
 ```
 
 ## Estrutura do repositorio
@@ -207,7 +207,7 @@ O artigo, o notebook de pipeline e o codigo local permanecem no repositorio do
 projeto. O pacote de dados publicado esta identificado pelo DOI:
 
 ```text
-https://doi.org/10.5281/zenodo.21270037
+https://doi.org/10.5281/zenodo.21271031
 ```
 
 ## Testes locais
