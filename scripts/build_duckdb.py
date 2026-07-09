@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 import duckdb
+import pandas as pd
 
 
 SUMMARY_QUERIES = {
@@ -200,6 +201,311 @@ def sql_literal(value: Path | str) -> str:
     return str(value).replace("\\", "/").replace("'", "''")
 
 
+def quote_identifier(identifier: str) -> str:
+    return '"' + identifier.replace('"', '""') + '"'
+
+
+def relation_columns(con: duckdb.DuckDBPyConnection, relation: str) -> list[tuple[str, str]]:
+    rows = con.execute(f"DESCRIBE {relation}").fetchall()
+    return [(str(row[0]), str(row[1])) for row in rows]
+
+
+def column_names(con: duckdb.DuckDBPyConnection, relation: str) -> list[str]:
+    return [name for name, _ in relation_columns(con, relation)]
+
+
+def scalar(con: duckdb.DuckDBPyConnection, query: str) -> int:
+    value = con.execute(query).fetchone()[0]
+    return int(value or 0)
+
+
+def count_missing(
+    con: duckdb.DuckDBPyConnection,
+    relation: str,
+    column: str,
+    total_records: int,
+) -> int:
+    if column not in column_names(con, relation):
+        return total_records
+    return scalar(
+        con,
+        f"SELECT count(*) FROM {relation} WHERE {quote_identifier(column)} IS NULL",
+    )
+
+
+def count_true(
+    con: duckdb.DuckDBPyConnection,
+    relation: str,
+    column: str,
+) -> int:
+    if column not in column_names(con, relation):
+        return 0
+    return scalar(
+        con,
+        f"""
+        SELECT count(*)
+        FROM {relation}
+        WHERE coalesce(try_cast({quote_identifier(column)} AS boolean), false)
+        """,
+    )
+
+
+def write_schema(con: duckdb.DuckDBPyConnection, docs_dir: Path) -> None:
+    schema = {
+        "dataset": "VacinaBR-PNI",
+        "description": (
+            "Dataset curado de doses aplicadas pelo Programa Nacional de "
+            "Imunizacoes, gerado a partir dos CSVs mensais do PNI."
+        ),
+        "columns": [
+            {"name": name, "duckdb_type": dtype}
+            for name, dtype in relation_columns(con, "vacinacao_curada")
+        ],
+    }
+
+    with (docs_dir / "schema.json").open("w", encoding="utf-8") as file:
+        json.dump(schema, file, ensure_ascii=False, indent=2)
+
+
+def write_validation_report(
+    con: duckdb.DuckDBPyConnection,
+    docs_dir: Path,
+) -> pd.DataFrame:
+    relation = "vacinacao_curada"
+    names = column_names(con, relation)
+    total_records = scalar(con, f"SELECT count(*) FROM {relation}")
+    total_columns = len(names)
+
+    if names:
+        present_expr = " + ".join(
+            f"count({quote_identifier(column)})::HUGEINT"
+            for column in names
+        )
+        total_missing_values = scalar(
+            con,
+            f"""
+            SELECT
+                ({total_records}::HUGEINT * {total_columns}::HUGEINT)
+                - ({present_expr})
+            FROM {relation}
+            """,
+        )
+    else:
+        total_missing_values = 0
+
+    if "numero_idade_paciente" in names:
+        invalid_age_records = scalar(
+            con,
+            f"""
+            SELECT count(*)
+            FROM {relation}
+            WHERE {quote_identifier('numero_idade_paciente')} IS NOT NULL
+              AND (
+                try_cast({quote_identifier('numero_idade_paciente')} AS double) < 0
+                OR try_cast({quote_identifier('numero_idade_paciente')} AS double) > 130
+              )
+            """,
+        )
+    else:
+        invalid_age_records = 0
+
+    if "data_vacina" in names:
+        invalid_date_records = scalar(
+            con,
+            f"""
+            SELECT count(*)
+            FROM {relation}
+            WHERE {quote_identifier('data_vacina')} IS NULL
+            """,
+        )
+    else:
+        invalid_date_records = total_records
+
+    complete_records = count_true(con, relation, "registro_completo")
+    valid_document_records = count_true(con, relation, "registro_valido_documento")
+
+    rows = [
+        ("original_records", total_records, "original records"),
+        ("processed_records", total_records, "processed records"),
+        ("removed_duplicate_records", 0, "removed duplicate records"),
+        ("total_columns", total_columns, "total columns"),
+        ("total_missing_values", total_missing_values, "total missing values"),
+        ("invalid_age_records", invalid_age_records, "invalid age records"),
+        ("invalid_date_records", invalid_date_records, "invalid date records"),
+        ("complete_records", complete_records, "complete records"),
+        (
+            "incomplete_records",
+            total_records - complete_records,
+            "incomplete records",
+        ),
+        (
+            "valid_document_records",
+            valid_document_records,
+            "valid document records",
+        ),
+        (
+            "invalid_document_records",
+            total_records - valid_document_records,
+            "invalid document records",
+        ),
+    ]
+
+    for column in [
+        "data_vacina",
+        "sexo_paciente",
+        "numero_idade_paciente",
+        "uf_paciente",
+        "codigo_municipio_paciente",
+        "sg_vacina",
+        "descricao_vacina_fabricante",
+    ]:
+        rows.append(
+            (
+                f"missing_{column}",
+                count_missing(con, relation, column, total_records),
+                f"missing {column.replace('_', ' ')}",
+            )
+        )
+
+    validation = pd.DataFrame(rows, columns=["metric", "value", "description"])
+    validation.to_csv(docs_dir / "validation_report.csv", index=False)
+    return validation
+
+
+def dir_size_mb(path: Path) -> float:
+    if not path.exists():
+        return 0.0
+    total = sum(file.stat().st_size for file in path.rglob("*") if file.is_file())
+    return round(total / (1024 * 1024), 2)
+
+
+def csv_sum(path: Path, column: str) -> int:
+    if not path.exists():
+        return 0
+    df = pd.read_csv(path)
+    if column not in df.columns:
+        return 0
+    return int(pd.to_numeric(df[column], errors="coerce").fillna(0).sum())
+
+
+def metric_value(validation: pd.DataFrame, metric: str) -> int:
+    value = validation.loc[validation["metric"] == metric, "value"]
+    return int(value.iloc[0]) if not value.empty else 0
+
+
+def write_run_closure_reports(
+    con: duckdb.DuckDBPyConnection,
+    validation: pd.DataFrame,
+    processed_dir: Path,
+    analytics_dir: Path,
+    docs_dir: Path,
+    db_path: Path,
+) -> None:
+    processed_records = metric_value(validation, "processed_records")
+    parquet_files = sorted(processed_dir.glob("year=*/month=*/part-*.parquet"))
+
+    monthly_total = csv_sum(analytics_dir / "monthly_vaccination_summary.csv", "doses_aplicadas")
+    vaccine_total = csv_sum(analytics_dir / "vaccine_type_summary.csv", "doses_aplicadas")
+    municipality_total = csv_sum(
+        analytics_dir / "municipality_vaccination_summary.csv",
+        "doses_aplicadas",
+    )
+
+    months_processed = scalar(
+        con,
+        """
+        SELECT count(*)
+        FROM (
+            SELECT ano_vacinacao, mes_vacinacao
+            FROM monthly_vaccination_summary
+            WHERE ano_vacinacao IS NOT NULL AND mes_vacinacao IS NOT NULL
+            GROUP BY ano_vacinacao, mes_vacinacao
+        )
+        """,
+    )
+    municipalities_observed = scalar(
+        con,
+        """
+        SELECT count(*)
+        FROM municipality_vaccination_summary
+        WHERE codigo_municipio_paciente IS NOT NULL
+        """,
+    )
+    distinct_sg_vacina = scalar(
+        con,
+        """
+        SELECT count(DISTINCT sg_vacina)
+        FROM vaccine_type_summary
+        WHERE sg_vacina IS NOT NULL
+        """,
+    )
+    distinct_vaccine_rows = scalar(con, "SELECT count(*) FROM vaccine_dictionary")
+
+    closure_rows = [
+        ("processed_records", processed_records),
+        ("original_records", metric_value(validation, "original_records")),
+        ("removed_duplicate_records", metric_value(validation, "removed_duplicate_records")),
+        ("total_missing_values", metric_value(validation, "total_missing_values")),
+        ("complete_records", metric_value(validation, "complete_records")),
+        ("incomplete_records", metric_value(validation, "incomplete_records")),
+        ("valid_document_records", metric_value(validation, "valid_document_records")),
+        ("invalid_age_records", metric_value(validation, "invalid_age_records")),
+        ("invalid_date_records", metric_value(validation, "invalid_date_records")),
+        ("missing_uf_paciente", metric_value(validation, "missing_uf_paciente")),
+        (
+            "missing_codigo_municipio_paciente",
+            metric_value(validation, "missing_codigo_municipio_paciente"),
+        ),
+        ("monthly_total_records", monthly_total),
+        ("vaccine_total_records", vaccine_total),
+        ("municipality_total_records", municipality_total),
+        ("months_processed", months_processed),
+        ("municipalities_observed", municipalities_observed),
+        ("distinct_sg_vacina", distinct_sg_vacina),
+        ("distinct_vaccine_rows", distinct_vaccine_rows),
+        ("parquet_files", len(parquet_files)),
+        ("processed_parquet_size_mb", dir_size_mb(processed_dir)),
+        ("duckdb_size_mb", round(db_path.stat().st_size / (1024 * 1024), 2) if db_path.exists() else 0.0),
+    ]
+
+    pd.DataFrame(closure_rows, columns=["metric", "value"]).to_csv(
+        docs_dir / "run_closure_summary.csv",
+        index=False,
+    )
+
+    checks = [
+        (
+            "monthly_total_equals_processed",
+            monthly_total == processed_records,
+            monthly_total,
+            processed_records,
+        ),
+        (
+            "vaccine_total_equals_processed",
+            vaccine_total == processed_records,
+            vaccine_total,
+            processed_records,
+        ),
+        (
+            "municipality_total_equals_processed",
+            municipality_total == processed_records,
+            municipality_total,
+            processed_records,
+        ),
+        (
+            "valid_documents_equals_processed",
+            metric_value(validation, "valid_document_records") == processed_records,
+            metric_value(validation, "valid_document_records"),
+            processed_records,
+        ),
+    ]
+
+    pd.DataFrame(
+        checks,
+        columns=["check", "passed", "observed_value", "expected_value"],
+    ).to_csv(docs_dir / "run_consistency_checks.csv", index=False)
+
+
 def build_database(
     processed_dir: Path,
     analytics_dir: Path,
@@ -327,6 +633,17 @@ def build_database(
 
     with (docs_dir / "duckdb_catalog.json").open("w", encoding="utf-8") as file:
         json.dump(catalog, file, ensure_ascii=False, indent=2)
+
+    write_schema(con, docs_dir)
+    validation = write_validation_report(con, docs_dir)
+    write_run_closure_reports(
+        con=con,
+        validation=validation,
+        processed_dir=processed_dir,
+        analytics_dir=analytics_dir,
+        docs_dir=docs_dir,
+        db_path=db_path,
+    )
 
     total_records = con.execute("SELECT total_records FROM dataset_metadata").fetchone()[0]
     con.close()

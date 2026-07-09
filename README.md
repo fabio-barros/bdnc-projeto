@@ -1,9 +1,9 @@
-# VacinaBR-PNI ETL Pipeline
+# VacinaBR-PNI
 
-Pipeline para baixar, tratar, validar e documentar dados de doses aplicadas pelo
-Programa Nacional de Imunizacoes (PNI). O fluxo recomendado usa os CSVs mensais
-do Portal de Dados Abertos do SUS, armazena os arquivos no Google Drive e executa
-a ETL no Google Colab.
+Pipeline e artefatos para curadoria, validacao, documentacao e publicacao de
+dados de doses aplicadas pelo Programa Nacional de Imunizacoes (PNI). O fluxo
+oficial do projeto usa os CSVs mensais do Portal de Dados Abertos do SUS,
+armazena os arquivos no Google Drive e executa a ETL no Google Colab.
 
 ## Dataset publicado
 
@@ -19,34 +19,61 @@ Link persistente:
 https://doi.org/10.5281/zenodo.21270037
 ```
 
-## Estrutura
+## Estrutura do repositorio
 
-- `scripts/etl_pni_pipeline.py`: pipeline local legada baseada na API.
-- `scripts/build_duckdb.py`: cria a base analitica DuckDB a partir dos Parquets.
-- `scripts/build_geography_metadata.py`: baixa metadados municipais do IBGE para enriquecimento geografico.
-- `scripts/create_release_package.py`: monta uma pasta de release com docs, CSVs e metadados.
-- `notebooks/vacinabr_pni_colab_drive_etl.ipynb`: fluxo principal no Google Colab.
-- `notebooks/query_duckdb_examples.ipynb`: exemplos de consulta dos Parquets/DuckDB.
-- `notebooks/exploratory_analysis.ipynb`: exemplo de analise exploratoria dos CSVs.
-- `notebooks/data_quality_report.ipynb`: exemplo de relatorio de qualidade dos dados.
-- `dashboard/streamlit_app.py`: dashboard demonstrativo sobre os CSVs analiticos.
-- `data_sources/pni_2025_csv_manifest.csv`: manifesto dos ZIPs CSV mensais de 2025.
-- `src/vacinabr_pni/config.py`: regioes, aliases, colunas sensiveis e essenciais.
-- `src/vacinabr_pni/extract.py`: extracao legada via API.
-- `src/vacinabr_pni/transform.py`: limpeza, normalizacao, derivacao de campos e deduplicacao.
-- `src/vacinabr_pni/validation.py`: metricas de qualidade dos dados.
-- `src/vacinabr_pni/writers.py`: escrita de parquet, agregados analiticos e documentacao.
-- `data/`: destino padrao dos dados brutos, processados e agregados.
-- `docs/`: destino padrao dos artefatos de documentacao gerados.
-- `pipeline_log.txt`: evidencia da ultima execucao da pipeline.
+- `notebooks/vacinabr_pni_colab_drive_etl.ipynb`: fluxo oficial de coleta,
+  processamento, validacao e geracao dos artefatos finais no Google Colab.
+- `notebooks/query_duckdb_examples.ipynb`: exemplos de consulta com DuckDB.
+- `notebooks/exploratory_analysis.ipynb`: exemplo de exploracao dos CSVs
+  analiticos.
+- `notebooks/data_quality_report.ipynb`: exemplo de relatorio de qualidade.
+- `paper/`: fonte LaTeX, referencias e figuras do artigo de dados.
+- `docs/`: documentacao do projeto, catalogos, dicionario de dados e relatorios.
+- `data_sources/pni_2025_csv_manifest.csv`: manifesto dos ZIPs CSV mensais de
+  2025.
+- `data_sources/ibge_municipalities.csv`: metadados municipais usados no
+  enriquecimento geografico e no mapa.
+- `data/analytics/`: exemplos locais de CSVs analiticos.
+- `dashboard/streamlit_app.py`: dashboard demonstrativo sobre os CSVs
+  analiticos.
+- `scripts/` e `src/`: codigo local equivalente ao fluxo do notebook, usado
+  para reproduzir a curadoria em ambiente local quando os ZIPs e dependencias
+  estiverem disponiveis.
 
 ## Fluxo recomendado: Google Drive + Colab
 
 1. Abra `notebooks/vacinabr_pni_colab_drive_etl.ipynb` no Google Colab.
 2. Execute as celulas em ordem.
 3. Autorize a montagem do Google Drive.
-4. Rode primeiro com `MAX_MONTHS = 1`.
-5. Quando validar, altere para `MAX_MONTHS = None` e rode os 12 meses.
+4. Confirme que a celula 3 aponta para:
+
+```text
+/content/drive/MyDrive/VacinaBR-PNI
+```
+
+5. Na celula 7, escolha os meses que serao processados:
+
+```python
+MONTHS_TO_PROCESS = [10, 11, 12]  # meses especificos
+MONTHS_TO_PROCESS = [1]           # apenas janeiro
+MONTHS_TO_PROCESS = None          # todos os meses do manifesto
+```
+
+6. Para retomar uma execucao sem duplicar dados, mantenha:
+
+```python
+CLEAR_OUTPUTS_FOR_SELECTED_MONTHS = False
+SKIP_EXISTING_MONTHS = True
+RESUME_DEDUPLICATE = False
+```
+
+7. Use `CLEAR_OUTPUTS_FOR_SELECTED_MONTHS = True` apenas quando quiser apagar e
+   reprocessar do zero os meses selecionados.
+8. Depois do processamento, execute a celula 8 para gerar os artefatos finais:
+   agregados CSV, DuckDB, dicionario de dados, schema, metadados e relatorios de
+   validacao.
+9. Execute as celulas finais A e B para gerar o resumo da run completa, checks de
+   consistencia, CSV municipal mapeavel e mapa Plotly.
 
 O notebook baixa os ZIPs para:
 
@@ -61,11 +88,74 @@ MyDrive/VacinaBR-PNI/data/processed
 MyDrive/VacinaBR-PNI/data/analytics
 MyDrive/VacinaBR-PNI/data/vacinabr_pni.duckdb
 MyDrive/VacinaBR-PNI/docs
+MyDrive/VacinaBR-PNI/paper/figures
 ```
 
-Mais detalhes em `docs/colab_drive_workflow.md`.
+Mais detalhes estao em `docs/colab_drive_workflow.md`.
 
-## Instalacao
+## Saidas principais
+
+A execucao completa gera os arquivos usados como dataset, evidencia e
+documentacao:
+
+- `data/processed/year=*/month=*/*.parquet`: registros curados particionados por
+  ano e mes.
+- `data/analytics/*.csv`: agregados por mes, UF, regiao, municipio, vacina,
+  fabricante, sexo, faixa etaria e qualidade.
+- `data/vacinabr_pni.duckdb`: banco DuckDB portatil para consultas SQL.
+- `docs/validation_report.csv`: metricas globais de volume, completude e
+  qualidade.
+- `docs/run_closure_summary.csv`: resumo final da execucao anual.
+- `docs/run_consistency_checks.csv`: verificacoes de consistencia dos totais.
+- `docs/schema.json`: esquema observado na camada curada.
+- `docs/data_dictionary.csv`: dicionario de dados.
+- `docs/source_metadata.json`: metadados de proveniencia.
+- `docs/pni_2025_csv_manifest.csv`: manifesto das fontes oficiais.
+- `docs/map_coverage_report.csv`: cobertura dos registros mapeaveis.
+- `data/analytics/municipality_vaccination_summary_mappable.csv`: CSV municipal
+  com coordenadas validas para visualizacao.
+- `paper/figures/municipality_map_plotly.html`: mapa interativo gerado no Colab.
+
+Consulte `docs/analytics_catalog.md` para a descricao de cada CSV analitico.
+
+## Como usar os dados
+
+### DuckDB
+
+```python
+import duckdb
+
+con = duckdb.connect("data/vacinabr_pni.duckdb")
+
+con.sql("""
+    SELECT uf_paciente, SUM(doses_aplicadas) AS doses_aplicadas
+    FROM state_vaccination_summary
+    GROUP BY uf_paciente
+    ORDER BY doses_aplicadas DESC
+""").df()
+```
+
+### Parquet direto
+
+```python
+import duckdb
+
+duckdb.sql("""
+    SELECT uf_paciente, COUNT(*) AS doses_aplicadas
+    FROM read_parquet('data/processed/year=*/month=*/*.parquet')
+    GROUP BY uf_paciente
+    ORDER BY doses_aplicadas DESC
+""").df()
+```
+
+Exemplos adicionais estao em:
+
+- `notebooks/query_duckdb_examples.ipynb`
+- `notebooks/exploratory_analysis.ipynb`
+- `notebooks/data_quality_report.ipynb`
+- `docs/duckdb_usage.md`
+
+## Instalacao local para notebooks e exemplos
 
 ```powershell
 python -m venv .venv
@@ -73,42 +163,54 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Artefatos para o Data Paper
+## Qualidade dos dados
 
-A execucao gera os arquivos usados como evidencia e documentacao:
+A validacao verifica:
 
-- `MyDrive/VacinaBR-PNI/docs/validation_report.csv`
-- `MyDrive/VacinaBR-PNI/docs/schema.json`
-- `MyDrive/VacinaBR-PNI/docs/data_dictionary.csv`
-- `MyDrive/VacinaBR-PNI/docs/source_metadata.json`
-- `MyDrive/VacinaBR-PNI/docs/pni_2025_csv_manifest.csv`
-- `MyDrive/VacinaBR-PNI/data/analytics/*.csv`
-- `MyDrive/VacinaBR-PNI/data/vacinabr_pni.duckdb` quando a camada DuckDB for criada
+- schema e colunas esperadas;
+- registros brutos e processados;
+- duplicatas removidas;
+- campos ausentes;
+- idade valida entre 0 e 130 anos;
+- datas de vacinacao invalidas ou ausentes;
+- completude de campos essenciais;
+- validade documental do registro;
+- remocao de campos sensiveis da camada processada.
 
-Consulte `docs/analytics_catalog.md` para a descricao de cada CSV gerado.
+Os relatorios segmentados incluem:
 
-## Camada analitica DuckDB
+- `quality_by_month.csv`
+- `quality_by_state.csv`
+- `quality_by_vaccine.csv`
 
-DuckDB pode ser usado para consultar os Parquets curados com SQL e materializar
-tabelas resumo. Ele e a camada de banco analitico do projeto.
+## Privacidade
 
-Uso local:
+Campos sensiveis diretos, como identificadores de paciente e CEP do paciente,
+nao permanecem na camada Parquet curada. O dataset preserva campos agregaveis e
+analiticos necessarios para pesquisa, documentando ausencias e limitacoes nos
+relatorios de qualidade.
 
-```powershell
-python scripts/build_duckdb.py
+## Publicacao no Zenodo
+
+O pacote publicado no Zenodo e focado no dataset e contem:
+
+```text
+data/
+docs/
+notebooks/
+README.md
+CITATION.cff
+LICENSE
 ```
 
-Para enriquecer municipios com metadados do IBGE antes de criar o DuckDB:
+O artigo, o notebook de pipeline e o codigo local permanecem no repositorio do
+projeto. O pacote de dados publicado esta identificado pelo DOI:
 
-```powershell
-python scripts/build_geography_metadata.py
-python scripts/build_duckdb.py --geography-path data_sources/ibge_municipalities.csv
+```text
+https://doi.org/10.5281/zenodo.21270037
 ```
 
-No Colab, o notebook principal ja cria `vacinabr_pni.duckdb` depois de gerar os
-Parquets. Exemplos adicionais estao em `docs/duckdb_usage.md`.
-
-## Testes
+## Testes locais
 
 ```powershell
 python -m unittest discover
@@ -117,32 +219,41 @@ python -m unittest discover
 Os testes cobrem criacao do DuckDB, resumos analiticos, enriquecimento
 geografico basico e validade JSON dos notebooks.
 
-## Dashboard
+## Execucao local equivalente ao notebook
+
+O fluxo local usa o mesmo manifesto de ZIPs CSV mensais, processa os arquivos em
+chunks, grava Parquets em `data/processed/year=*/month=*/part-*.parquet`,
+recalcula os agregados com DuckDB e gera os relatorios finais. As diferencas em
+relacao ao Colab sao apenas de ambiente: os caminhos sao locais e os ZIPs ficam
+em `data/raw/zip`.
+
+Para processar todos os meses do manifesto:
 
 ```powershell
-pip install -r requirements-dashboard.txt
-streamlit run dashboard/streamlit_app.py
+python scripts/etl_pni_pipeline.py --source csv
 ```
 
-## Publicacao
-
-Para montar uma pasta de release com os artefatos leves:
+Para processar meses especificos:
 
 ```powershell
-python scripts/create_release_package.py
+python scripts/etl_pni_pipeline.py --source csv --months 10,11,12
 ```
 
-Para incluir tambem o banco DuckDB:
+Para retomar sem baixar novamente e sem reprocessar meses que ja possuem
+`part-*.parquet`:
 
 ```powershell
-python scripts/create_release_package.py --include-duckdb
+python scripts/etl_pni_pipeline.py --source csv --skip-download --months 10,11,12
 ```
 
-Para incluir os Parquets curados, use `--include-parquet` apenas se houver espaco
-suficiente, pois essa camada pode ser grande.
-
-## Execucao local legada
+Para apagar e reprocessar apenas os meses selecionados:
 
 ```powershell
-python scripts/etl_pni_pipeline.py --years 2025 --max-pages 2 --page-size 1000
+python scripts/etl_pni_pipeline.py --source csv --months 10,11,12 --clear-selected-months
+```
+
+O fluxo antigo por API ainda existe apenas para comparacao historica:
+
+```powershell
+python scripts/etl_pni_pipeline.py --source api --years 2025 --max-pages 2 --page-size 1000
 ```

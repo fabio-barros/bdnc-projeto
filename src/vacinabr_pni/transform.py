@@ -92,6 +92,7 @@ def transform(
     df: pd.DataFrame,
     keep_sensitive: bool,
     only_valid_documents: bool,
+    deduplicate: bool = True,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     original_rows = len(df)
 
@@ -115,10 +116,27 @@ def transform(
         "nome_uf_paciente",
         "nome_uf_estabelecimento",
         "nome_municipio_paciente",
+        "nome_municipio_estabelecimento",
+        "nome_pais_paciente",
+        "nome_pais_estabelecimento",
+        "nome_raca_cor_paciente",
+        "descricao_nacionalidade_paciente",
+        "nome_etnia_indigena_paciente",
+        "razao_social_estabelecimento",
+        "nome_fantasia_estabelecimento",
         "sg_vacina",
+        "descricao_vacina",
         "descricao_dose_vacina",
+        "descricao_local_aplicacao",
+        "descricao_via_administracao",
         "descricao_vacina_fabricante",
         "descricao_estrategia_vacinacao",
+        "descricao_origem_registro",
+        "descricao_vacina_categoria_atendimento",
+        "descricao_vacina_grupo_atendimento",
+        "descricao_condicao_maternal",
+        "descricao_tipo_estabelecimento",
+        "descricao_natureza_estabelecimento",
         "descricao_sistema_origem",
         "st_documento",
     ]
@@ -132,6 +150,9 @@ def transform(
         "codigo_municipio_estabelecimento",
         "codigo_vacina",
         "codigo_sistema_origem",
+        "codigo_documento",
+        "codigo_cnes_estabelecimento",
+        "codigo_lote_vacina",
     ]
 
     for col in code_columns:
@@ -141,6 +162,10 @@ def transform(
     df["registro_deletado_rnds"] = False
 
     if "data_deletado_rnds" in df.columns:
+        df["data_deletado_rnds"] = pd.to_datetime(
+            df["data_deletado_rnds"],
+            errors="coerce",
+        )
         df["registro_deletado_rnds"] = df["data_deletado_rnds"].notna()
 
     df["documento_final"] = True
@@ -218,9 +243,11 @@ def transform(
         column for column in df.columns if column not in SENSITIVE_COLUMNS
     ]
 
-    duplicated_before = int(df.duplicated(subset=dedup_subset).sum())
-
-    df = df.drop_duplicates(subset=dedup_subset).copy()
+    if deduplicate:
+        duplicated_before = int(df.duplicated(subset=dedup_subset).sum())
+        df = df.drop_duplicates(subset=dedup_subset).copy()
+    else:
+        duplicated_before = 0
 
     if not keep_sensitive:
         df = df.drop(

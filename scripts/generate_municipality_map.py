@@ -23,6 +23,13 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--output-dir", default="paper/figures")
     parser.add_argument("--max-points", type=int, default=250)
+    parser.add_argument("--analytics-dir", default="data/analytics")
+    parser.add_argument("--docs-dir", default="docs")
+    parser.add_argument(
+        "--write-coverage",
+        action="store_true",
+        help="Tambem grava o CSV municipal mapeavel e o relatorio de cobertura.",
+    )
     return parser.parse_args()
 
 
@@ -56,7 +63,7 @@ def enrich_with_geography(df: pd.DataFrame, geography_path: Path) -> pd.DataFram
     )
 
 
-def load_municipalities(path: Path, geography_path: Path, max_points: int) -> pd.DataFrame:
+def prepare_mappable_municipalities(path: Path, geography_path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = enrich_with_geography(df, geography_path)
     df = df.dropna(subset=["latitude", "longitude", "doses_aplicadas"]).copy()
@@ -85,8 +92,63 @@ def load_municipalities(path: Path, geography_path: Path, max_points: int) -> pd
             .copy()
         )
 
-    df = df.sort_values("doses_aplicadas", ascending=False).head(max_points)
+    df = df.sort_values("doses_aplicadas", ascending=False)
     return df
+
+
+def load_municipalities(path: Path, geography_path: Path, max_points: int) -> pd.DataFrame:
+    return prepare_mappable_municipalities(path, geography_path).head(max_points)
+
+
+def write_coverage_outputs(
+    input_path: Path,
+    geography_path: Path,
+    analytics_dir: Path,
+    docs_dir: Path,
+) -> pd.DataFrame:
+    source = pd.read_csv(input_path)
+    total_records = int(
+        pd.to_numeric(source["doses_aplicadas"], errors="coerce").fillna(0).sum()
+    )
+    mappable = prepare_mappable_municipalities(input_path, geography_path)
+    mappable_records = int(mappable["doses_aplicadas"].sum()) if not mappable.empty else 0
+    pct_mappable = round(100 * mappable_records / total_records, 2) if total_records else 0.0
+
+    analytics_dir.mkdir(parents=True, exist_ok=True)
+    docs_dir.mkdir(parents=True, exist_ok=True)
+
+    mappable.to_csv(
+        analytics_dir / "municipality_vaccination_summary_mappable.csv",
+        index=False,
+        encoding="utf-8",
+    )
+
+    pd.DataFrame(
+        [
+            {
+                "metric": "municipalities_mappable",
+                "value": int(len(mappable)),
+                "description": "municipalities with valid latitude and longitude",
+            },
+            {
+                "metric": "mappable_doses",
+                "value": mappable_records,
+                "description": "doses in mappable municipalities",
+            },
+            {
+                "metric": "total_doses",
+                "value": total_records,
+                "description": "total doses in municipality summary",
+            },
+            {
+                "metric": "pct_mappable_doses",
+                "value": pct_mappable,
+                "description": "percentage of doses with valid municipal coordinates",
+            },
+        ]
+    ).to_csv(docs_dir / "map_coverage_report.csv", index=False, encoding="utf-8")
+
+    return mappable
 
 
 def write_leaflet_html(df: pd.DataFrame, output_path: Path) -> None:
@@ -316,7 +378,17 @@ def main() -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     geography_path = Path(args.geography)
-    df = load_municipalities(input_path, geography_path, args.max_points)
+    if args.write_coverage:
+        full_df = write_coverage_outputs(
+            input_path=input_path,
+            geography_path=geography_path,
+            analytics_dir=Path(args.analytics_dir),
+            docs_dir=Path(args.docs_dir),
+        )
+        df = full_df.head(args.max_points)
+    else:
+        df = load_municipalities(input_path, geography_path, args.max_points)
+
     if df.empty:
         raise ValueError("Nenhum municipio com latitude/longitude foi encontrado.")
 
